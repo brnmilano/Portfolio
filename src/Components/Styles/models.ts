@@ -1,0 +1,14 @@
+export type AlignContent = 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly' | 'stretch';
+export type AlignItems = 'start' | 'end' | 'center' | 'baseline' | 'stretch';
+export type AlignSelf = 'auto' | 'start' | 'end' | 'center' | 'baseline' | 'stretch';
+export type Color = 'blue' | 'darkGray' | 'gray' | 'green' | 'lightGray' | 'red' | 'white';
+export type Dimension = number | string;
+export type Direction = 'row' | 'column';
+export type Display = 'none' | 'block' | 'inline' | 'inlineBlock' | 'visuallyHidden' | 'flex' | 'grid';
+export type JustifyContent = 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
+export type Opacity = 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
+export type Overflow = 'visible' | 'hidden' | 'scroll' | 'scrollX' | 'scrollY' | 'auto';
+export type Position = 'static' | 'absolute' | 'relative' | 'fixed';
+export type TextAlign = 'left' | 'right' | 'center' | 'justify';
+export type TextOverflow = 'normal' | 'breakWord' | 'noWrap';
+export type TextWeight = 'bold' | 'semi-bold' | 'normal';

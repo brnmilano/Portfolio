@@ -1,0 +1,66 @@
+:root {
+  --color-blue: #011A3F;
+  --color-darkGray: #292929;
+  --color-gray: #3c3c3c;
+  --color-green: #5CFF9B;
+  --color-lightGray: #AFAFAF;
+  --color-red: #FF1901;
+
+  --color-blue-transparent: #1563ce;
+  --color-darkGray-transparent: #292929;
+  --color-gray-transparent: #3c3c3c;
+  --color-green-transparent: #099a359c;
+  --color-lightGray-transparent: #a2a2a233;
+  --color-red-transparent: #FF1901;
+}
+
+.blue {
+  color: var(--color-blue);
+}
+.dark-gray {
+  color: var(--color-darkGray);
+}
+.gray {
+  color: var(--color-gray);
+}
+.green {
+  color: var(--color-green);
+}
+.light-gray {
+  color: var(--color-lightGray);
+}
+.red {
+  color: var(--color-red);
+}
+.white {
+  color: #ffffff;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+
+  &.border-color-blue {
+    border-color: var(--color-blue-transparent);
+  }
+
+  &.border-color-dark-gray {
+    border-color: var(--color-darkGray-transparent);
+  }
+
+  &.border-color-gray {
+    border-color: var(--color-gray-transparent);
+  }
+
+  &.border-color-green {
+    border-color: var(--color-green-transparent);
+  }
+
+  &.border-color-light-gray {
+    border-color: var(--color-lightGray-transparent);
+  }
+
+  &.border-color-red {
+    border-color: var(--color-red-transparent);
+  }
+}

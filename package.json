@@ -1,0 +1,32 @@
+{
+  "name": "front-academy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "11.3.0",
+    "@material-ui/core": "5.0.0-beta.5",
+    "@material-ui/styles": "4.11.4",
+    "@mui/icons-material": "5.0.1",
+    "@mui/material": "5.0.2",
+    "clsx": "1.1.1",
+    "crypto": "1.0.1",
+    "framer-motion": "4.1.17",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-intersection-observer": "8.32.1",
+    "sass": "1.42.1",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.26",
+    "@types/uuid": "8.3.1",
+    "typescript": "4.4.3"
+  }
+}

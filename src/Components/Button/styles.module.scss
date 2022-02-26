@@ -1,0 +1,76 @@
+.button {
+  padding: 24px 95px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: 105px;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #2ea7ff;
+  }
+
+  &.clear {
+    background: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #2ea7ff;
+    }
+  }
+
+  &.primary {
+    background: var(--primary);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: #2ea7ff;
+    }
+  }
+
+  &.secondary {
+    background: var(--secondary);
+  }
+
+  &.sm {
+    padding: 13px 65px;
+  }
+
+  &.md {
+    padding: 16px 70px;
+  }
+}
+
+.buttonContainer {
+  background: none;
+  border: none;
+
+  &:disabled {
+    .button {
+      background-color: #2f2f2f;
+    }
+  }
+}
+
+.buttonBase {
+  outline: initial !important;
+  border-radius: 8px !important;
+
+  &:focus {
+    box-shadow: 0 0 0 3px #000000;
+  }
+
+  &.noOutlineOnFocus {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
