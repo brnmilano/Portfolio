@@ -19,6 +19,10 @@
         font-weight: 500;
       }
 
+      .button:hover {
+        background-color: rgba(112, 112, 112, 0.06);
+      }
+
       .lineShadow {
         border: 1px solid #4b4b4b;
         margin-top: 15px;
