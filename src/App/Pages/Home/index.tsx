@@ -1,13 +1,13 @@
 import Box from "Components/Box";
-import Professor from "./Professor";
 import styles from "./styles.module.scss";
+import Apresentação from "./Apresentação";
+import Cards from "./Cards";
 
 export default function Home() {
   return (
-    <Box>
-      <Box className={styles.content}>
-        <Professor />
-      </Box>
+    <Box className={styles.content}>
+      <Apresentação />
+      <Cards />
     </Box>
   );
 }
