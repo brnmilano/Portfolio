@@ -1,5 +1,5 @@
 import Box from 'Components/Box';
-import Certificados from './Certificados';
+import Certificados from './Certificates';
 import HardSkills from './HardSkills';
 import LastProjects from './LastProjects';
 import styles from './styles.module.scss';
