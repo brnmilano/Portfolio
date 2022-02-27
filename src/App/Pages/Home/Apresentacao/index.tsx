@@ -30,7 +30,7 @@ export default function Professor() {
             </Box>
 
             <Heading className={styles.cardSubtitle} size={20}>
-              Desenvolvedor a 1 ano
+              Desenvolvedor front-end a 1 ano
             </Heading>
 
             <Box className={styles.textContainer}>
@@ -40,6 +40,15 @@ export default function Professor() {
                 extraordinária e hoje faço parte de uma escola para novos devs
                 front-end, além de atuar diretamente em diversos projetos de
                 grandes empresas brasileiras, inclusive empresas internacionais.
+              </Text>
+
+              <Text color="white">
+                Apaixonado por aplicações web responsivas e de alta qualidade.
+              </Text>
+
+              <Text size={14} italic color="white">
+                Sempre em busca de novas oportunidades de crescimento e evolução
+                profissional
               </Text>
             </Box>
 
@@ -64,7 +73,9 @@ export default function Professor() {
                   alt="Telefone"
                   src="/images/telefone.png"
                 />
-                <Text color="lightGray">(61) 9 9882-2870 / (61) 9 8257-5381</Text>
+                <Text color="lightGray">
+                  (61) 9 9882-2870 / (61) 9 8257-5381
+                </Text>
               </Box>
             </Box>
 
