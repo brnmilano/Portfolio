@@ -5,113 +5,151 @@ import Text from "Components/Text";
 import Button from "@mui/material/Button";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Link from "next/link";
+import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
+import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
 
 export default function LastProjects() {
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
-        <Box className={styles.card}>
-          <Box display="flex" justifyContent="between" alignItems="center">
-            <Heading color="white">Últimos projetos</Heading>
-            <Button classes={{ root: styles.button }} href="#text-buttons">
-              Ver todos
-            </Button>
+        <FadeInWhenVisible>
+          <Box className={styles.card}>
+            <Box display="flex" justifyContent="between" alignItems="center">
+              <Heading color="white">Últimos projetos</Heading>
+              <Button classes={{ root: styles.button }} href="#text-buttons">
+                Ver todos
+              </Button>
+            </Box>
+
+            <Box className={styles.lineShadow}></Box>
+
+            <FadeInFromLeftWhenVisible>
+              <Box className={styles.projects}>
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/mr-green.png"
+                    alt=""
+                  />
+                  <Text size={14} color="white">
+                    Mr. Green, projeto feito em Next.JS, clique e fique por
+                    dentro de tudo!
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/front-academy.png"
+                    alt=""
+                  />
+                  <Text size={14} color="white">
+                    Front Academy, projeto feito em Next.JS, clique e fique por
+                    dentro de tudo!
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/decathlon.png"
+                    alt=""
+                  />
+                  <Text size={14} color="white">
+                    Freelance onde pude desenvolver o trabalho de um dev pleno!
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/cantinho.png"
+                    alt=""
+                  />
+                  <Text size={14} color="white">
+                    Projeto criado para treinar a criação de componentes.
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/depoimentos.png"
+                    alt=""
+                  />
+                  <Text size={14} color="white">
+                    Projeto feito para treinar CSS Grid e responsividade.
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+
+                <Box className={styles.projectCard}>
+                  <img
+                    className={styles.projectsImages}
+                    src="/images/loki.png"
+                    alt="Loki"
+                  />
+                  <Text size={14} color="white">
+                    Capa da série Loki no Disney+
+                  </Text>
+
+                  <Box className={styles.arrow}>
+                    <Button
+                      classes={{ root: styles.button }}
+                      href="#text-buttons"
+                    >
+                      <ArrowForwardIosIcon />
+                    </Button>
+                  </Box>
+                </Box>
+              </Box>
+            </FadeInFromLeftWhenVisible>
           </Box>
-
-          <Box className={styles.lineShadow}></Box>
-
-          <Box className={styles.projects}>
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/mr-green.png"
-                alt=""
-              />
-              <Text color="white">Mr. Green, projeto feito em Next.JS</Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/front-academy.png"
-                alt=""
-              />
-              <Text color="white">Mr. Green, projeto feito em Next.JS</Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/decathlon.png"
-                alt=""
-              />
-              <Text color="white">Mr. Green, projeto feito em Next.JS</Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/cantinho.png"
-                alt=""
-              />
-              <Text color="white">Projeto criado para treinar </Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/depoimentos.png"
-                alt=""
-              />
-              <Text color="white">Projeto feito para treinar CSS Grid e responsividade.</Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-
-            <Box className={styles.projectCard}>
-              <img
-                className={styles.projectsImages}
-                src="/images/loki.png"
-                alt="Loki"
-              />
-              <Text color="white">Capa da série Loki no Disney+</Text>
-
-              <Box className={styles.arrow}>
-                <Button classes={{ root: styles.button }} href="#text-buttons">
-                  <ArrowForwardIosIcon />
-                </Button>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
+        </FadeInWhenVisible>
       </Box>
     </Box>
   );
