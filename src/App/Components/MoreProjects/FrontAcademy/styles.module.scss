@@ -1,0 +1,40 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 50px;
+
+
+  .projectsImages {
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .projectsCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: none;
+    max-width: 620px;
+
+    a {
+      color: #0fce33;
+    }
+  }
+
+  .button {
+    padding: 5px 10px;
+
+
+    a {
+      size: 12px;
+      font-weight: 600;
+      color: #6a6a6a;
+    }
+  }
+}
