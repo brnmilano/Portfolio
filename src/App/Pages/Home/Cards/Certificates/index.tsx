@@ -14,7 +14,7 @@ export default function Certificados() {
           <Box className={styles.card}>
             <Box display="flex" justifyContent="between" alignItems="center">
               <Heading color="white">Certificados</Heading>
-              <Button classes={{ root: styles.button }} href="#text-buttons">
+              <Button classes={{ root: styles.button }} href="certificados">
                 Ver todos
               </Button>
             </Box>
