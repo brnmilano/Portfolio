@@ -39,7 +39,8 @@ export default function LastProjects() {
                   <Box className={styles.arrow}>
                     <Button
                       classes={{ root: styles.button }}
-                      href="#text-buttons"
+                      href="https://www.mistergreen.com.br/"
+                      target={"_blank"}
                     >
                       <ArrowForwardIosIcon />
                     </Button>
@@ -60,7 +61,8 @@ export default function LastProjects() {
                   <Box className={styles.arrow}>
                     <Button
                       classes={{ root: styles.button }}
-                      href="#text-buttons"
+                      href="https://www.frontacademy.com.br/"
+                      target={"_blank"}
                     >
                       <ArrowForwardIosIcon />
                     </Button>
@@ -100,7 +102,8 @@ export default function LastProjects() {
                   <Box className={styles.arrow}>
                     <Button
                       classes={{ root: styles.button }}
-                      href="#text-buttons"
+                      href="https://brnmilano.github.io/massoterapia/"
+                      target={"_blank"}
                     >
                       <ArrowForwardIosIcon />
                     </Button>
@@ -120,27 +123,8 @@ export default function LastProjects() {
                   <Box className={styles.arrow}>
                     <Button
                       classes={{ root: styles.button }}
-                      href="#text-buttons"
-                    >
-                      <ArrowForwardIosIcon />
-                    </Button>
-                  </Box>
-                </Box>
-
-                <Box className={styles.projectCard}>
-                  <img
-                    className={styles.projectsImages}
-                    src="/images/loki.png"
-                    alt="Loki"
-                  />
-                  <Text size={14} color="white">
-                    Capa da série Loki no Disney+
-                  </Text>
-
-                  <Box className={styles.arrow}>
-                    <Button
-                      classes={{ root: styles.button }}
-                      href="#text-buttons"
+                      href="https://brnmilano.github.io/testimonials-grid-section/"
+                      target={"_blank"}
                     >
                       <ArrowForwardIosIcon />
                     </Button>
