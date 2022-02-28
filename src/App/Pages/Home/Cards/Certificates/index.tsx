@@ -17,6 +17,34 @@ export default function Certificados() {
           </Box>
 
           <Box className={styles.lineShadow}></Box>
+
+          <Box className={styles.projects}>
+            <Box className={styles.projectCard}>
+              <img
+                className={styles.projectsImages}
+                src="/images/cis.png"
+                alt=""
+              />
+              <Box>
+                <Text color="white">Método - CIS</Text>
+                <Text color="white">FEBRACIS, 2019</Text>
+                <Text size={12} color="white">Autenticidade: 0061l00000K5iN3QAJ$_$0011l0000164OiNQAQ</Text>
+              </Box>
+            </Box>
+
+            <Box className={styles.projectCard}>
+              <img
+                className={styles.projectsImages}
+                src="/images/alura.png"
+                alt=""
+              />
+              <Box>
+                <Text color="white">Formação Front-End</Text>
+                <Text color="white">Alura, 2021</Text>
+                <Text size={12} color="white">Autenticidade: 0061l00000K5iN3QAJ$_$0011l0000164OiNQAQ</Text>
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>

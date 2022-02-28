@@ -26,6 +26,28 @@
       .lineShadow {
         border: 1px solid #4b4b4b;
         margin-top: 15px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .projectCard {
+        display: flex;
+        align-items: center;
+        background-color: #1d1d1d;
+        border-radius: 10px;
+        gap: 10px;
+        max-width: 550px;
+      }
+
+      .projectsImages {
+        height: 75px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
       }
     }
   }
