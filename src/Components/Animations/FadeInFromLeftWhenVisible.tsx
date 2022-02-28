@@ -17,11 +17,11 @@ export default function FadeInFromLeftWhenVisible({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
       variants={{
         hidden: {
           opacity: 0,
-          x: -200,
+          x: -150,
         },
         visible: {
           opacity: 1,
