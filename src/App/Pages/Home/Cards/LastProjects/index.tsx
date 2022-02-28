@@ -72,7 +72,7 @@ export default function LastProjects() {
                 src="/images/cantinho.png"
                 alt=""
               />
-              <Text color="white">Mr. Green, projeto feito em Next.JS</Text>
+              <Text color="white">Projeto criado para treinar </Text>
 
               <Box className={styles.arrow}>
                 <Button classes={{ root: styles.button }} href="#text-buttons">
@@ -87,7 +87,22 @@ export default function LastProjects() {
                 src="/images/depoimentos.png"
                 alt=""
               />
-              <Text color="white">Mr. Green, projeto feito em Next.JS</Text>
+              <Text color="white">Projeto feito para treinar CSS Grid e responsividade.</Text>
+
+              <Box className={styles.arrow}>
+                <Button classes={{ root: styles.button }} href="#text-buttons">
+                  <ArrowForwardIosIcon />
+                </Button>
+              </Box>
+            </Box>
+
+            <Box className={styles.projectCard}>
+              <img
+                className={styles.projectsImages}
+                src="/images/loki.png"
+                alt="Loki"
+              />
+              <Text color="white">Capa da série Loki no Disney+</Text>
 
               <Box className={styles.arrow}>
                 <Button classes={{ root: styles.button }} href="#text-buttons">

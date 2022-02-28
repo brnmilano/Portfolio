@@ -26,14 +26,14 @@
       .lineShadow {
         border: 1px solid #4b4b4b;
         margin-top: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
 
       .projects {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        overflow: auto;
+        overflow-y: scroll;
         height: 150px;
 
         .projectCard {
