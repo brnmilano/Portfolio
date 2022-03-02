@@ -1,21 +1,24 @@
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Box from "Components/Box";
+import Button from "@mui/material/Button";
+import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
 import Heading from "Components/Heading";
 import styles from "./styles.module.scss";
 import Text from "Components/Text";
-import Button from "@mui/material/Button";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Link from "next/link";
-import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
-import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function LastProjects() {
+  const isMobile = useIsMobile({ mobileSize: 1440 });
+  const isTablet = useIsMobile({ mobileSize: 850 });
+
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
         <FadeInWhenVisible>
           <Box className={styles.card}>
             <Box display="flex" justifyContent="between" alignItems="center">
-              <Heading color="white">Últimos projetos</Heading>
+              <Heading color="white"size={isMobile ? 28 : 36} >Últimos projetos</Heading>
               <Button classes={{ root: styles.button }} href="projetos">
                 Ver todos
               </Button>

@@ -11,14 +11,6 @@
     justify-content: center;
   }
 
-  .title {
-    max-width: 300px;
-    margin-top: 95px;
-    color: #fff;
-    font-size: 51px;
-    line-height: 60px;
-  }
-
   .card {
     position: relative;
     max-width: 520px;
@@ -50,11 +42,6 @@
         transform: translate(-50%, -50%);
         object-fit: cover;
       }
-    }
-
-    .cardTitle {
-      font-size: 46px;
-      color: #fff;
     }
 
     .cardSubtitle {
@@ -107,26 +94,106 @@
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    padding: 80px 0;
+  @media screen and (max-width: 1440px) {
+    .card {
+      .imageContainer {
+        position: relative;
+        height: 140px;
+        width: 140px;
+        border: 4px solid #43b0ff;
+        border-radius: 50%;
+        overflow: hidden;
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
+      }
     }
+  }
 
-    .title {
-      max-width: 290px;
-      margin: 0 auto;
-      font-size: 30px;
-      line-height: 38px;
-      text-align: center !important;
-    }
+  @media screen and (max-width: 1260px) {
 
     .card {
-      margin-top: 130px;
-      margin-left: 0;
+      max-width: 500px;
+      padding: 15px 20px;
+
+      .cardImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 20px;
+        transform: translateY(-50%);
+      }
+
+      .imageContainer {
+        position: relative;
+        height: 130px;
+        width: 130px;
+        border: 4px solid #43b0ff;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
+      }
+
+      .cardSubtitle {
+        margin-top: 10px;
+        color: #5db9fa;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 5px;
+
+        .email {
+          height: 12px;
+        }
+
+        .telefone {
+          height: 18px;
+        }
+      }
+
+      a.socialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        border-radius: 10px;
+        background-color: #292929;
+        transition: all 0.1s ease-out;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: #fff;
+        }
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
     }
   }
 

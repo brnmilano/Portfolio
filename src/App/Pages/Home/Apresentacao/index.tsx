@@ -6,8 +6,12 @@ import Heading from 'Components/Heading';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styles from './styles.module.scss';
 import Text from 'Components/Text';
+import useIsMobile from "helpers/useIsMobile";
 
 export default function Professor() {
+  const isMobile = useIsMobile({ mobileSize: 1260 });
+  const isTablet = useIsMobile({ mobileSize: 768 });
+
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
@@ -20,9 +24,10 @@ export default function Professor() {
             </Box>
 
             <FadeInFromLeftWhenVisible>
-              <Box marginTop={90}>
+              <Box marginTop={75}>
                 <Heading
-                  className={styles.cardTitle}
+                  size={44}
+                  color="white"
                   fontFamily="Cabin"
                   weight="semi-bold"
                 >
@@ -80,7 +85,7 @@ export default function Professor() {
                 </Box>
               </Box>
 
-              <Box alignItems="center" display="flex" marginTop={40}>
+              <Box alignItems="center" display="flex" marginTop={35}>
                 <a
                   className={styles.socialMedia}
                   href="https://github.com/brnmilano"

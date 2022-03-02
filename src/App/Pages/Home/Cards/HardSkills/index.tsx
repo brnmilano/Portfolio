@@ -1,16 +1,22 @@
-import Box from "Components/Box";
-import Heading from "Components/Heading";
-import styles from "./styles.module.scss";
-import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
-import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import Box from 'Components/Box';
+import FadeInFromLeftWhenVisible from 'Components/Animations/FadeInFromLeftWhenVisible';
+import FadeInWhenVisible from 'Components/Animations/FadeInWhenVisible';
+import Heading from 'Components/Heading';
+import styles from './styles.module.scss';
+import useIsMobile from 'helpers/useIsMobile';
 
 export default function HardSkills() {
+  const isMobile = useIsMobile({ mobileSize: 1440 });
+  const isTablet = useIsMobile({ mobileSize: 850 });
+
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
         <FadeInWhenVisible>
           <Box className={styles.card}>
-            <Heading color="white">Tecnologias e frameworks</Heading>
+            <Heading color="white" size={isMobile ? 28 : 36}>
+              Tecnologias e frameworks
+            </Heading>
 
             <Box className={styles.lineShadow}></Box>
 

@@ -4,7 +4,6 @@
   background-color: #141414;
   color: #fff;
 
-
   .content {
     width: 100%;
     .card {
@@ -27,6 +26,22 @@
 
       .imageSkills {
         height: 50px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .content {
+      .lineShadow {
+        margin-top: 10px;
+      }
+
+      .skills {
+        margin-top: 15px;
+
+        .imageSkills {
+          height: 40px;
+        }
       }
     }
   }
