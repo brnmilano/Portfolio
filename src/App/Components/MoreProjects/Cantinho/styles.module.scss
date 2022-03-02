@@ -6,7 +6,7 @@
   padding-top: 50px;
 
   .projectsImages {
-    height: 300px;
+    height: 302px;
     border-radius: 10px;
     margin-bottom: 10px;
   }
@@ -21,18 +21,14 @@
     text-transform: none;
     max-width: 620px;
 
-    a {
-      color: #0fce33;
-    }
-  }
+    .button {
+      padding: 5px 10px;
 
-  .button {
-    padding: 5px 10px;
-
-    a {
-      size: 12px;
-      font-weight: 600;
-      color: #6a6a6a;
+      a {
+        size: 12px;
+        font-weight: 600;
+        color: #6a6a6a;
+      }
     }
   }
 }

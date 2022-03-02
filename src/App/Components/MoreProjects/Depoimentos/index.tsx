@@ -20,11 +20,9 @@ export default function Depoimentos() {
           </Text>
 
           <Text size={14} weight="bold" color="white">
-            Dediquei esse projeto para a evolução das minhas habilidades em
-            HTML, CSS e JavaScript. Nele utilizei uma lógica simples para
-            indicar que o estabelecimento estaria aberto até um horário X,
-            fechado durante um período Y e aberto durante um périodo Z. Aqui
-            também evolui minhas habilidades com a responsividade da aplivação.
+            Este projeto foi feito a partir do Front-End Mentor, onde nele
+            coloquei em prática minhas habilidades de CSS Grid, posicionamento
+            das divs e layouts responsivos. Como dito em outros projetos, dediquei bastante tempo para o aprendizado de layouts responsivos.
           </Text>
 
           <Box display="flex" justifyContent="center">

@@ -1,13 +1,14 @@
-import Box from "Components/Box";
-import Cantinho from "./Cantinho";
-import DmRoldanas from "./Dm";
-import FrontAcademy from "./FrontAcademy";
-import Heading from "Components/Heading";
-import Loki from "./Depoimentos";
-import MrGreen from "./MrGreen";
-import styles from "./styles.module.scss";
-import TimeControl from "./TimeControl";
-import Login from "./Login";
+import Box from 'Components/Box';
+import Cantinho from './Cantinho';
+import Depoimentos from './Depoimentos';
+import DmRoldanas from './Dm';
+import FrontAcademy from './FrontAcademy';
+import Heading from 'Components/Heading';
+import Login from './Login';
+import Loki from './Loki';
+import MrGreen from './MrGreen';
+import styles from './styles.module.scss';
+import TimeControl from './TimeControl';
 
 export default function MoreProjects() {
   return (
@@ -31,7 +32,7 @@ export default function MoreProjects() {
 
       <Box display="flex" gap={20}>
         <TimeControl />
-        <Loki />
+        <Depoimentos />
       </Box>
 
       <Box display="flex" gap={20}>

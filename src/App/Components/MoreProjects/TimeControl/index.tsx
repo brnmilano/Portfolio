@@ -21,10 +21,9 @@ export default function TimeControl() {
 
           <Text size={14} weight="bold" color="white">
             Dediquei esse projeto para a evolução das minhas habilidades em
-            HTML, CSS e JavaScript. Nele utilizei uma lógica simples para
-            indicar que o estabelecimento estaria aberto até um horário X,
-            fechado durante um período Y e aberto durante um périodo Z. Aqui
-            também evolui minhas habilidades com a responsividade da aplivação.
+            HTML, CSS e JavaScript. Nele utilizei JavaScript puro para alterar o
+            horário dos cards em, tempo diário, tempo semanal e tempo mensal,
+            cada um apresentando um tempo diferente para cada tarefa do usuário.
           </Text>
 
           <Box display="flex" justifyContent="center">

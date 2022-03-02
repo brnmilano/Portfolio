@@ -10,26 +10,24 @@ export default function Login() {
       <Box className={styles.teste}>
         <img
           className={styles.projectsImages}
-          src="/images/time-tracking.png"
-          alt="Cantinho do amor"
+          src="/images/login.png"
+          alt="Página de Ligon"
         />
 
         <Box className={styles.projectsCard}>
           <Text weight="bold" color="white">
-            Painel de controle de tempo - Projeto pessoal para estudos.
+            Página de Login - Projeto pessoal para estudos.
           </Text>
 
           <Text size={14} weight="bold" color="white">
-            Dediquei esse projeto para a evolução das minhas habilidades em
-            HTML, CSS e JavaScript. Nele utilizei uma lógica simples para
-            indicar que o estabelecimento estaria aberto até um horário X,
-            fechado durante um período Y e aberto durante um périodo Z. Aqui
-            também evolui minhas habilidades com a responsividade da aplivação.
+            Projeto proposto como desafio de uma comunidade de devs que faço
+            parte. Projeto feito bem no inicio de minha carreira dev, onde
+            aprendi conceitos de HTML e CSS.
           </Text>
 
           <Box display="flex" justifyContent="center">
             <Button classes={{ root: styles.button }}>
-              <Link href="https://brnmilano.github.io/time-tracking-dashboard/">
+              <Link href="https://brnmilano.github.io/login-codelandia/">
                 <a target="_blank">Veja o resultado final</a>
               </Link>
             </Button>
