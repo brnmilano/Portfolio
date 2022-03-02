@@ -11,7 +11,7 @@ export default function Alura() {
         <img
           className={styles.certifiedImages}
           src="/images/alura.png"
-          alt=""
+          alt="Alura"
         />
 
         <Button classes={{ root: styles.button }}>

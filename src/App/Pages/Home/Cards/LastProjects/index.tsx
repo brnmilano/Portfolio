@@ -16,7 +16,7 @@ export default function LastProjects() {
           <Box className={styles.card}>
             <Box display="flex" justifyContent="between" alignItems="center">
               <Heading color="white">Últimos projetos</Heading>
-              <Button classes={{ root: styles.button }} href="#text-buttons">
+              <Button classes={{ root: styles.button }} href="projetos">
                 Ver todos
               </Button>
             </Box>
@@ -29,7 +29,7 @@ export default function LastProjects() {
                   <img
                     className={styles.projectsImages}
                     src="/images/mr-green.png"
-                    alt=""
+                    alt="Mr. Green"
                   />
                   <Text size={14} color="white">
                     Mr. Green, projeto feito em Next.JS, clique e fique por
@@ -51,7 +51,7 @@ export default function LastProjects() {
                   <img
                     className={styles.projectsImages}
                     src="/images/front-academy.png"
-                    alt=""
+                    alt="Front Academy"
                   />
                   <Text size={14} color="white">
                     Front Academy, projeto feito em Next.JS, clique e fique por
@@ -73,7 +73,7 @@ export default function LastProjects() {
                   <img
                     className={styles.projectsImages}
                     src="/images/decathlon.png"
-                    alt=""
+                    alt="Decathlon"
                   />
                   <Text size={14} color="white">
                     Freelance onde pude desenvolver o trabalho de um dev pleno!
@@ -93,7 +93,7 @@ export default function LastProjects() {
                   <img
                     className={styles.projectsImages}
                     src="/images/cantinho.png"
-                    alt=""
+                    alt="Cantinho do amor"
                   />
                   <Text size={14} color="white">
                     Projeto criado para treinar a criação de componentes.
@@ -114,7 +114,7 @@ export default function LastProjects() {
                   <img
                     className={styles.projectsImages}
                     src="/images/depoimentos.png"
-                    alt=""
+                    alt="Grade de depoimentos"
                   />
                   <Text size={14} color="white">
                     Projeto feito para treinar CSS Grid e responsividade.

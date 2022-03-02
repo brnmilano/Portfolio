@@ -27,7 +27,7 @@ export default function Certificados() {
                   <img
                     className={styles.projectsImages}
                     src="/images/alura.png"
-                    alt=""
+                    alt="Alura"
                   />
                   <Box>
                     <Text color="white">Formação Front-End</Text>
