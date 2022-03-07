@@ -1,11 +1,11 @@
-import Box from 'Components/Box';
-import FadeInFromLeftWhenVisible from 'Components/Animations/FadeInFromLeftWhenVisible';
-import FadeInWhenVisible from 'Components/Animations/FadeInWhenVisible';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import Heading from 'Components/Heading';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import styles from './styles.module.scss';
-import Text from 'Components/Text';
+import Box from "Components/Box";
+import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Heading from "Components/Heading";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import styles from "./styles.module.scss";
+import Text from "Components/Text";
 import useIsMobile from "helpers/useIsMobile";
 
 export default function Professor() {
@@ -24,9 +24,9 @@ export default function Professor() {
             </Box>
 
             <FadeInFromLeftWhenVisible>
-              <Box marginTop={75}>
+              <Box marginTop={60}>
                 <Heading
-                  size={44}
+                  size={isMobile ? 36 : 44}
                   color="white"
                   fontFamily="Cabin"
                   weight="semi-bold"
@@ -40,7 +40,7 @@ export default function Professor() {
               </Heading>
 
               <Box className={styles.textContainer}>
-                <Text color="white">
+                <Text size={isMobile ? 14 : 16} color="white">
                   Ao me ver rodeado de programadores, decidi entrar de cabeça no
                   mundo da tecnologia. Com muito foco tive uma evolução
                   extraordinária e hoje faço parte de uma escola para novos devs
@@ -49,11 +49,11 @@ export default function Professor() {
                   internacionais.
                 </Text>
 
-                <Text color="white">
+                <Text size={isMobile ? 14 : 16} color="white">
                   Apaixonado por aplicações web responsivas e de alta qualidade.
                 </Text>
 
-                <Text size={14} italic color="white">
+                <Text size={isMobile ? 12 : 16} italic color="white">
                   Sempre em busca de novas oportunidades de crescimento!
                 </Text>
               </Box>
@@ -61,7 +61,9 @@ export default function Professor() {
               <Box className={styles.contact}>
                 <Box display="flex" alignItems="center" gap={10}>
                   <img alt="Localiação" src="/images/localizacao.png" />
-                  <Text color="lightGray">Brasília, DF - Brasil</Text>
+                  <Text size={isMobile ? 14 : 16} color="lightGray">
+                    Brasília, DF - Brasil
+                  </Text>
                 </Box>
 
                 <Box display="flex" alignItems="center" gap={10}>
@@ -70,7 +72,9 @@ export default function Professor() {
                     alt="E-mail"
                     src="/images/email.png"
                   />
-                  <Text color="lightGray">brnmilano.dev@gmail.com</Text>
+                  <Text size={isMobile ? 14 : 16} color="lightGray">
+                    brnmilano.dev@gmail.com
+                  </Text>
                 </Box>
 
                 <Box display="flex" alignItems="center" gap={9}>
@@ -79,7 +83,7 @@ export default function Professor() {
                     alt="Telefone"
                     src="/images/telefone.png"
                   />
-                  <Text color="lightGray">
+                  <Text size={isMobile ? 14 : 16} color="lightGray">
                     (61) 9 9882-2870 / (61) 9 8257-5381
                   </Text>
                 </Box>

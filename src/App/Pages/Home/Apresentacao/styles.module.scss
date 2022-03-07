@@ -96,134 +96,59 @@
 
   @media screen and (max-width: 1440px) {
     .card {
+      padding: 12px 20px;
+
       .imageContainer {
-        position: relative;
         height: 140px;
         width: 140px;
-        border: 4px solid #43b0ff;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          object-fit: cover;
-        }
       }
     }
   }
 
   @media screen and (max-width: 1260px) {
-
     .card {
-      max-width: 500px;
-      padding: 15px 20px;
-
-      .cardImage {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-left: 20px;
-        transform: translateY(-50%);
-      }
-
-      .imageContainer {
-        position: relative;
-        height: 130px;
-        width: 130px;
-        border: 4px solid #43b0ff;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          object-fit: cover;
-        }
-      }
-
-      .cardSubtitle {
-        margin-top: 10px;
-        color: #5db9fa;
-        font-size: 18px;
-        font-weight: 400;
-      }
-
-      .textContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-      .contact {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        gap: 5px;
-
-        .email {
-          height: 12px;
-        }
-
-        .telefone {
-          height: 18px;
-        }
-      }
-
-      a.socialMedia {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px 10px;
-        border-radius: 10px;
-        background-color: #292929;
-        transition: all 0.1s ease-out;
-
-        &:active,
-        &:focus,
-        &:hover {
-          background-color: #fff;
-        }
-
-        &:not(:first-child) {
-          margin-left: 10px;
-        }
-      }
+      max-width: 450px;
+      padding: 30px 20px;
     }
   }
 
-  @media screen and (max-width: 470px) {
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .title {
-      margin: 0;
-      text-align: left !important;
-    }
-
+  @media screen and (max-width: 1030px) {
     .card {
-      padding: 10px 25px 20px;
+      max-width: 400px;
+      padding: 15px 20px;
 
-      .cardTitle {
-        font-size: 32px;
-        line-height: 34px;
+      h1 {
+        font-size: 26px;
+      }
+
+      h3 {
+        font-size: 26px;
       }
 
       .cardSubtitle {
-        margin-top: 0;
-        font-size: 12px;
+        margin-top: 5px;
       }
 
-      .textContainer {
-        margin-top: 10px;
+      .imageContainer {
+        height: 130px;
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .container {
+    margin: 0;
+
+    .card {
+      .imageContainer {
+        height: 140px;
+        width: 140px;
+      }
+
+      .cardSubtitle {
+        font-size: 17px;
       }
     }
   }
