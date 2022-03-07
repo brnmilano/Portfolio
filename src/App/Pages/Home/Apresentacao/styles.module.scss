@@ -14,7 +14,7 @@
   .card {
     position: relative;
     max-width: 520px;
-    padding: 23px 25px;
+    padding: 28px;
     border: 1px solid #707070;
     border-radius: 10px;
     background-color: #0f0f0f;
@@ -56,6 +56,16 @@
       flex-direction: column;
       gap: 10px;
       margin-top: 20px;
+
+      p {
+        font-size: 18px;
+      }
+
+      div {
+        p {
+          font-size: 14px;
+        }
+      }
     }
 
     .contact {
@@ -96,7 +106,7 @@
 
   @media screen and (max-width: 1440px) {
     .card {
-      padding: 12px 20px;
+      padding: 18px;
 
       .imageContainer {
         height: 140px;
@@ -109,6 +119,19 @@
     .card {
       max-width: 450px;
       padding: 30px 20px;
+
+      .textContainer {
+  
+        p {
+          font-size: 14px;
+        }
+  
+        div {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 
