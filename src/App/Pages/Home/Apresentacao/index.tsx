@@ -9,7 +9,7 @@ import Text from "Components/Text";
 import useIsMobile from "helpers/useIsMobile";
 
 export default function Professor() {
-  const isMobile = useIsMobile({ mobileSize: 950 });
+  const isMobile = useIsMobile({ mobileSize: 1260 });
 
   return (
     <Box className={styles.container}>
