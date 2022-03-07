@@ -1,11 +1,11 @@
-import Box from 'Components/Box';
-import Button from '@mui/material/Button';
-import FadeInFromLeftWhenVisible from 'Components/Animations/FadeInFromLeftWhenVisible';
-import FadeInWhenVisible from 'Components/Animations/FadeInWhenVisible';
-import Heading from 'Components/Heading';
-import styles from './styles.module.scss';
-import Text from 'Components/Text';
-import useIsMobile from 'helpers/useIsMobile';
+import Box from "Components/Box";
+import Button from "@mui/material/Button";
+import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
+import Heading from "Components/Heading";
+import styles from "./styles.module.scss";
+import Text from "Components/Text";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function Certificados() {
   const isMobile = useIsMobile({ mobileSize: 1440 });
@@ -16,9 +16,20 @@ export default function Certificados() {
       <Box className={styles.content}>
         <FadeInWhenVisible>
           <Box className={styles.card}>
-            <Box display="flex" justifyContent="between" alignItems="center">
-              <Heading color="white" size={isMobile ? 28 : 36}>Certificados</Heading>
-              <Button classes={{ root: styles.button }} href="certificados">
+            <Box
+              className={styles.mobile}
+              display="flex"
+              justifyContent="between"
+              alignItems="center"
+            >
+              <Heading color="white" size={isMobile ? 28 : 36}>
+                Certificados
+              </Heading>
+              <Button
+                classes={{ root: styles.button }}
+                target="_blank"
+                href="certificados"
+              >
                 Ver todos
               </Button>
             </Box>
@@ -34,8 +45,12 @@ export default function Certificados() {
                     alt="Alura"
                   />
                   <Box>
-                    <Text color="white">Formação Front-End</Text>
-                    <Text color="white">Alura, 2021</Text>
+                    <Text size={isMobile ? 14 : 16} color="white">
+                      Formação Front-End
+                    </Text>
+                    <Text size={isMobile ? 14 : 16} color="white">
+                      Alura, 2021
+                    </Text>
                   </Box>
                 </Box>
               </Box>
