@@ -3,8 +3,11 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 import Text from "Components/Text";
 import { Button } from "@mui/material";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function () {
+  const isMobile = useIsMobile({ mobileSize: 540 });
+
   return (
     <Box className={styles.projects}>
       <Box className={styles.projectCard}>
@@ -22,7 +25,7 @@ export default function () {
             </Link>
           </Text>
 
-          <Text size={14} weight="bold" color="white">
+          <Text size={isMobile ? 12 : 14} weight="bold" color="white">
             Responsável pela criação e estilização da aplicação, esse projeto
             foi criado em Next.JS, nele apliquei todos os meus conhecimentos em
             JavaScript, TypeScript, HTML, CSS, SCSS além de ficar responsável

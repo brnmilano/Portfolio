@@ -32,3 +32,17 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  .projects {
+    .projectsImages {
+      height: 200px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .projectsCard {
+      max-width: 410px;
+    }
+  }
+}

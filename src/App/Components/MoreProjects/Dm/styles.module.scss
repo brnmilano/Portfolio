@@ -31,3 +31,18 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  .projects {
+    padding-top: 25px;
+    .projectsImages {
+      height: 200px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .projectsCard {
+      max-width: 410px;
+    }
+  }
+}

@@ -6,7 +6,36 @@
   width: 100%;
 
   .title {
-    width: 100%;
-    max-width: 1000px;
+    display: flex;
+    padding: 0 300px;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    padding: 25px;
+    .title {
+      display: flex;
+      padding: 0 10px;
+    }
+
+    .projects {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    h2 {
+      font-size: 20px;
+    }
   }
 }
