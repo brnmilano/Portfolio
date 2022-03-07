@@ -17,9 +17,20 @@ export default function LastProjects() {
       <Box className={styles.content}>
         <FadeInWhenVisible>
           <Box className={styles.card}>
-            <Box display="flex" justifyContent="between" alignItems="center">
-              <Heading color="white"size={isMobile ? 28 : 36} >Últimos projetos</Heading>
-              <Button classes={{ root: styles.button }} href="projetos">
+            <Box
+              className={styles.mobile}
+              display="flex"
+              justifyContent="between"
+              alignItems="center"
+            >
+              <Heading color="white" size={isMobile ? 28 : 36}>
+                Últimos projetos
+              </Heading>
+              <Button
+                classes={{ root: styles.button }}
+                target="_blank"
+                href="projetos"
+              >
                 Ver todos
               </Button>
             </Box>
@@ -34,7 +45,7 @@ export default function LastProjects() {
                     src="/images/mr-green.png"
                     alt="Mr. Green"
                   />
-                  <Text size={14} color="white">
+                  <Text size={isMobile ? 12 : 14} color="white">
                     Mr. Green, projeto feito em Next.JS, clique e fique por
                     dentro de tudo!
                   </Text>
@@ -56,7 +67,7 @@ export default function LastProjects() {
                     src="/images/front-academy.png"
                     alt="Front Academy"
                   />
-                  <Text size={14} color="white">
+                  <Text size={isMobile ? 12 : 14} color="white">
                     Front Academy, projeto feito em Next.JS, clique e fique por
                     dentro de tudo!
                   </Text>
@@ -78,7 +89,7 @@ export default function LastProjects() {
                     src="/images/decathlon.png"
                     alt="Decathlon"
                   />
-                  <Text size={14} color="white">
+                  <Text size={isMobile ? 12 : 14} color="white">
                     Freelance onde pude desenvolver o trabalho de um dev pleno!
                   </Text>
 
@@ -98,7 +109,7 @@ export default function LastProjects() {
                     src="/images/cantinho.png"
                     alt="Cantinho do amor"
                   />
-                  <Text size={14} color="white">
+                  <Text size={isMobile ? 12 : 14} color="white">
                     Projeto criado para treinar a criação de componentes.
                   </Text>
 
@@ -119,7 +130,7 @@ export default function LastProjects() {
                     src="/images/depoimentos.png"
                     alt="Grade de depoimentos"
                   />
-                  <Text size={14} color="white">
+                  <Text size={isMobile ? 12 : 14} color="white">
                     Projeto feito para treinar CSS Grid e responsividade.
                   </Text>
 

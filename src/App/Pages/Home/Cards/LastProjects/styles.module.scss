@@ -26,6 +26,7 @@
       .lineShadow {
         border: 1px solid #4b4b4b;
         margin-top: 15px;
+        width: 100%;
       }
 
       .projects {
@@ -35,6 +36,7 @@
         margin-top: 15px;
         overflow-y: scroll;
         height: 150px;
+
 
         .projectCard {
           display: flex;
@@ -59,26 +61,89 @@
 
   @media screen and (max-width: 1440px) {
     .content {
+      .lineShadow {
+        border: 1px solid #4b4b4b;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1260px) {
+    .content {
       .card {
-        padding: 20px 25px;
-        border: 1px solid #707070;
-        border-radius: 10px;
-        background-color: #0f0f0f;
+        padding: 15px 20px;
 
         .button {
-          color: #6a6a6a;
-          font-family: "MontSerrat", sans-serif;
-          font-size: 18px;
-          font-weight: 500;
-        }
-
-        .button:hover {
-          background-color: rgba(112, 112, 112, 0.06);
+          font-size: 14px;
         }
 
         .lineShadow {
-          border: 1px solid #4b4b4b;
           margin-top: 10px;
+        }
+
+        .projects {
+          height: 138px;
+
+          .projectsImages {
+            height: 55px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1030px) {
+    .content {
+      .card {
+        .lineShadow {
+          margin-top: 10px;
+        }
+
+        .projects {
+          height: 150px;
+
+          .projectsImages {
+            height: 54px;
+          }
+
+          .arrow {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 855px) {
+    .content {
+      .card {
+        padding: 15px 20px;
+
+        .mobile {
+          flex-direction: column;
+        }
+
+        .button {
+          font-size: 14px;
+        }
+
+        .lineShadow {
+          margin-top: 10px;
+        }
+
+        .projects {
+          margin-top: 20px;
+          height: 150px;
+
+          .projectsImages {
+            height: 50px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+
+          .arrow {
+            display: none;
+          }
         }
       }
     }
