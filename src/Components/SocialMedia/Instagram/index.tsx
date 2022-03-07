@@ -37,7 +37,7 @@ const Instagram: React.FC<Props> = ({
   return link ? (
     <a
       href={link}
-      id="instagram-front-academy"
+      id="instagram-bruno-milano"
       rel="noopener noreferrer"
       target="_blank"
     >

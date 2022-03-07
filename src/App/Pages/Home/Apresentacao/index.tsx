@@ -7,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import styles from "./styles.module.scss";
 import Text from "Components/Text";
 import useIsMobile from "helpers/useIsMobile";
+import { Instagram } from "@mui/icons-material";
 
 export default function Professor() {
   const isMobile = useIsMobile({ mobileSize: 1260 });
@@ -107,6 +108,16 @@ export default function Professor() {
                   target="_blank"
                 >
                   <LinkedInIcon style={{ color: "#0076FF", fontSize: 34 }} />
+                </a>
+
+                <a
+                  className={styles.socialMedia}
+                  href="https://www.instagram.com/goldbrn/"
+                  id="instagram-bruno-milano"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Instagram style={{ color: "#0076FF", fontSize: 34 }} />
                 </a>
               </Box>
             </FadeInFromLeftWhenVisible>
