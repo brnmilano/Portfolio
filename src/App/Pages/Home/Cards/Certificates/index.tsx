@@ -9,7 +9,6 @@ import useIsMobile from "helpers/useIsMobile";
 
 export default function Certificados() {
   const isMobile = useIsMobile({ mobileSize: 1440 });
-  const isTablet = useIsMobile({ mobileSize: 850 });
 
   return (
     <Box className={styles.container}>
