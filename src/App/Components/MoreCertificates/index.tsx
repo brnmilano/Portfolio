@@ -13,7 +13,7 @@ export default function MoreCertificates() {
         </Heading>
       </Box>
 
-      <Box display="flex" alignItems="center" gap={20}>
+      <Box className={styles.certificados}>
         <Cis />
         <Alura />
       </Box>

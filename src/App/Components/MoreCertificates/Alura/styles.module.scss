@@ -27,3 +27,12 @@
     }
   }
 }
+
+@media screen and (max-width: 485px) {
+  .certified {
+    padding-top: 25px;
+    .certifiedImages {
+      height: 200px;
+    }
+  }
+}
