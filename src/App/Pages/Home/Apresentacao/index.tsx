@@ -40,7 +40,7 @@ export default function Professor() {
               </Heading>
 
               <Box className={styles.textContainer}>
-                <Text size={isMobile ? 14 : 16} color="white">
+                <Text size={isMobile ? 14 : 18} color="white">
                   Ao me ver rodeado de programadores, decidi entrar de cabeça no
                   mundo da tecnologia. Com muito foco tive uma evolução
                   extraordinária e hoje faço parte de uma escola para novos devs
@@ -49,11 +49,11 @@ export default function Professor() {
                   internacionais.
                 </Text>
 
-                <Text size={isMobile ? 14 : 16} color="white">
+                <Text size={isMobile ? 14 : 18} color="white">
                   Apaixonado por aplicações web responsivas e de alta qualidade.
                 </Text>
 
-                <Text size={isMobile ? 12 : 16} italic color="white">
+                <Text size={isMobile ? 12 : 14} italic color="white">
                   Sempre em busca de novas oportunidades de crescimento!
                 </Text>
               </Box>
