@@ -7,9 +7,28 @@
   width: 100%;
 }
 
-
 @media screen and (max-width: 1440px) {
   .container {
     gap: 38px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .container {
+    gap: 35px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container {
+    gap: 35px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .container {
+    gap: 30px;
   }
 }
