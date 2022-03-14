@@ -36,7 +36,7 @@ export default function Professor() {
               </Box>
 
               <Heading className={styles.cardSubtitle} size={20}>
-                Desenvolvedor front-end a 1 ano
+                Desenvolvedor front-end
               </Heading>
 
               <Box className={styles.textContainer}>
