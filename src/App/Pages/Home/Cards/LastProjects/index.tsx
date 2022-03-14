@@ -85,8 +85,8 @@ export default function LastProjects() {
                 <Box className={styles.projectCard}>
                   <img
                     className={styles.projectsImages}
-                    src="/images/decathlon.png"
-                    alt="Decathlon"
+                    src="/images/freelancer.png"
+                    alt=""
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
                     Freelance onde pude desenvolver o trabalho de um dev pleno!
