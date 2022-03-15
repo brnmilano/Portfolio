@@ -25,7 +25,7 @@ export default function Cantinho() {
             indicar que o estabelecimento estaria aberto até um horário X,
             fechado durante um período Y e aberto durante um périodo Z. Aqui
             também evolui minhas habilidades com a responsividade da
-            aplivação.
+            aplicação.
           </Text>
 
           <Box display="flex" justifyContent="center">
