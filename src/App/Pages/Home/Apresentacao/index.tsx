@@ -109,16 +109,6 @@ export default function Professor() {
                 >
                   <LinkedInIcon style={{ color: "#0076FF", fontSize: 34 }} />
                 </a>
-
-                <a
-                  className={styles.socialMedia}
-                  href="https://www.instagram.com/goldbrn/"
-                  id="instagram-bruno-milano"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Instagram style={{ color: "#0076FF", fontSize: 34 }} />
-                </a>
               </Box>
             </FadeInFromLeftWhenVisible>
           </Box>

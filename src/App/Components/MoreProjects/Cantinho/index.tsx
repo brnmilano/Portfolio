@@ -24,7 +24,7 @@ export default function Cantinho() {
             HTML, CSS e JavaScript. Nele utilizei uma lógica simples para
             indicar que o estabelecimento estaria aberto até um horário X,
             fechado durante um período Y e aberto durante um périodo Z. Aqui
-            também evolui minhas habilidades com a responsividade da
+            também pude evoluir minhas habilidades com a responsividade da
             aplicação.
           </Text>
 
