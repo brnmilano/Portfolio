@@ -113,7 +113,7 @@ export default function Professor() {
 
                 <a
                   className={styles.socialMedia}
-                  href="https://www.linkedin.com/in/brunomilano/"
+                  href="mailto:brnmilano.dev@gmail.com"
                   id="linkedin-bruno-milano"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -123,8 +123,8 @@ export default function Professor() {
 
                 <a
                   className={styles.socialMedia}
-                  href="https://www.linkedin.com/in/brunomilano/"
-                  id="linkedin-bruno-milano"
+                  href="https://drive.google.com/file/d/1uys_w06ER4eUZFzfZ52YemubGVsmzwpI/view?usp=sharing"
+                  id="currículo-bruno-milano"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
