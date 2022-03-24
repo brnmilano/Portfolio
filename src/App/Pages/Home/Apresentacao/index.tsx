@@ -85,7 +85,7 @@ export default function Professor() {
                     src="/images/telefone.png"
                   />
                   <Text size={isMobile ? 14 : 16} color="lightGray">
-                    (61) 9 9882-2870 / (61) 9 8257-5381
+                    (61) 9 8342-6022
                   </Text>
                 </Box>
               </Box>
