@@ -11,7 +11,7 @@ import PortraitIcon from "@mui/icons-material/Portrait";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function Professor() {
-  const isMobile = useIsMobile({ mobileSize: 1260 });
+  const isMobile = useIsMobile({ mobileSize: 1366 });
 
   return (
     <Box className={styles.container}>
@@ -25,7 +25,7 @@ export default function Professor() {
             </Box>
 
             <FadeInFromLeftWhenVisible>
-              <Box marginTop={60}>
+              <Box marginTop={70}>
                 <Heading
                   size={isMobile ? 36 : 44}
                   color="white"
@@ -90,7 +90,7 @@ export default function Professor() {
                 </Box>
               </Box>
 
-              <Box alignItems="center" display="flex" marginTop={35}>
+              <Box className={styles.social}>
                 <a
                   className={styles.socialMedia}
                   href="https://github.com/brnmilano"
@@ -98,7 +98,7 @@ export default function Professor() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <GitHubIcon style={{ color: "#5C6BC0", fontSize: 34 }} />
+                  <GitHubIcon style={{ color: "#5C6BC0", fontSize: 24 }} />
                 </a>
 
                 <a
@@ -108,7 +108,7 @@ export default function Professor() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <LinkedInIcon style={{ color: "#0076FF", fontSize: 34 }} />
+                  <LinkedInIcon style={{ color: "#0076FF", fontSize: 24 }} />
                 </a>
 
                 <a
@@ -118,7 +118,7 @@ export default function Professor() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <MailOutlineIcon style={{ color: "#0078d4", fontSize: 34 }} />
+                  <MailOutlineIcon style={{ color: "#0078d4", fontSize: 24 }} />
                 </a>
 
                 <a
@@ -128,7 +128,7 @@ export default function Professor() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <PortraitIcon style={{ color: "#4169E1", fontSize: 34 }} />
+                  <PortraitIcon style={{ color: "#4169E1", fontSize: 24 }} />
                 </a>
               </Box>
             </FadeInFromLeftWhenVisible>
