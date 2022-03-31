@@ -42,6 +42,27 @@
     }
   }
 
+  @media screen and (max-width: 1366px) {
+    .content {
+      width: 100%;
+      .card {
+        padding: 10px 15px;
+      }
+
+      .lineShadow {
+        margin-top: 10px;
+      }
+
+      .skills {
+        margin-top: 15px;
+
+        .imageSkills {
+          height: 40px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1260px) {
     .content {
       .card {

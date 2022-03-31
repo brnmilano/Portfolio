@@ -2,27 +2,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 23px;
+  gap: 30px;
   max-width: 700px;
   width: 100%;
 }
 
 @media screen and (max-width: 1440px) {
   .container {
-    gap: 38px;
+    gap: 33px;
   }
 }
 
 @media screen and (max-width: 1260px) {
   .container {
-    gap: 35px;
+    gap: 15px;
     max-width: 500px;
   }
 }
 
 @media screen and (max-width: 1030px) {
   .container {
-    gap: 35px;
+    gap: 20px;
     max-width: 400px;
   }
 }

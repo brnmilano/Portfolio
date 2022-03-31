@@ -63,6 +63,31 @@
     }
   }
 
+  @media screen and (max-width: 1366px) {
+    .content {
+      width: 100%;
+      .card {
+        padding: 10px 15px;
+
+        .button {
+          font-size: 10px;
+        }
+
+        .lineShadow {
+          margin-top: 10px;
+        }
+      }
+
+      .certificates {
+        margin-top: 15px;
+
+        .certificatesImages {
+          height: 55px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1260px) {
     .content {
       .card {

@@ -1,9 +1,9 @@
-import Box from 'Components/Box';
-import FadeInFromLeftWhenVisible from 'Components/Animations/FadeInFromLeftWhenVisible';
-import FadeInWhenVisible from 'Components/Animations/FadeInWhenVisible';
-import Heading from 'Components/Heading';
-import styles from './styles.module.scss';
-import useIsMobile from 'helpers/useIsMobile';
+import Box from "Components/Box";
+import FadeInFromLeftWhenVisible from "Components/Animations/FadeInFromLeftWhenVisible";
+import FadeInWhenVisible from "Components/Animations/FadeInWhenVisible";
+import Heading from "Components/Heading";
+import styles from "./styles.module.scss";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function HardSkills() {
   const isMobile = useIsMobile({ mobileSize: 1440 });
