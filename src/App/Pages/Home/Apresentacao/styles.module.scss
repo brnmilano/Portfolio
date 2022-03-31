@@ -83,6 +83,12 @@
       }
     }
 
+    .social {
+      display: flex;
+      margin-top: 25px;
+      align-items: center;
+    }
+
     a.socialMedia {
       display: flex;
       align-items: center;
@@ -106,11 +112,73 @@
 
   @media screen and (max-width: 1440px) {
     .card {
-      padding: 18px;
+      padding: 0 20px 15px 20px;
 
       .imageContainer {
         height: 140px;
         width: 140px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .card {
+      max-width: 420px;
+      padding: 20px;
+
+      .cardImage {
+        position: absolute;
+        top: 35px;
+        left: 0;
+        margin-left: 20px;
+        transform: translateY(-50%);
+      }
+
+      .imageContainer {
+        position: relative;
+        height: 110px;
+        width: 110px;
+        border: 4px solid #43b0ff;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
+      }
+
+      .cardSubtitle {
+        margin-top: 5px;
+        color: #5db9fa;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .textContainer {
+        margin-top: 10px;
+
+        p {
+          font-size: 14px;
+        }
+
+        div {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .contact {
+        margin-top: 15px;
+      }
+
+      .social {
+        display: flex;
+        margin-top: 15px;
       }
     }
   }
@@ -121,11 +189,10 @@
       padding: 30px 20px;
 
       .textContainer {
-  
         p {
           font-size: 14px;
         }
-  
+
         div {
           p {
             font-size: 12px;
@@ -141,20 +208,40 @@
       padding: 15px 20px;
 
       h1 {
-        font-size: 26px;
+        font-size: 36px;
       }
 
       h3 {
         font-size: 26px;
       }
 
-      .cardSubtitle {
-        margin-top: 5px;
+      .cardImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 20px;
+        transform: translateY(-50%);
       }
 
       .imageContainer {
+        position: relative;
         height: 130px;
         width: 130px;
+        border: 4px solid #43b0ff;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
+
+        .cardSubtitle {
+          margin-top: 5px;
+        }
       }
     }
   }
