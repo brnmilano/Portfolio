@@ -3,8 +3,11 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 import Text from "Components/Text";
 import { Button } from "@mui/material";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function Cantinho() {
+  const isMobile = useIsMobile({ mobileSize: 540 });
+
   return (
     <Box className={styles.projects}>
       <Box className={styles.projectCard}>
@@ -19,7 +22,7 @@ export default function Cantinho() {
             Cantinho do amor - Projeto pessoal para estudos.
           </Text>
 
-          <Text size={14} weight="bold" color="white">
+          <Text size={isMobile ? 12 : 14} weight="bold" color="white">
             Dediquei esse projeto para a evolução das minhas habilidades em
             HTML, CSS e JavaScript. Nele utilizei uma lógica simples para
             indicar que o estabelecimento estaria aberto até um horário X,

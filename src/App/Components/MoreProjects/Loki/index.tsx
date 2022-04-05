@@ -3,8 +3,11 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 import Text from "Components/Text";
 import { Button } from "@mui/material";
+import useIsMobile from "helpers/useIsMobile";
 
 export default function Loki() {
+  const isMobile = useIsMobile({ mobileSize: 540 });
+
   return (
     <Box className={styles.projects}>
       <Box className={styles.teste}>
@@ -19,7 +22,7 @@ export default function Loki() {
             Painel de controle de tempo - Projeto pessoal para estudos.
           </Text>
 
-          <Text size={14} weight="bold" color="white">
+          <Text size={isMobile ? 12 : 14} weight="bold" color="white">
             Projeto proposto como desafio de uma comunidade de devs que faço
             parte. Projeto feito bem no inicio de minha carreira dev, onde
             aprendi conceitos de HTML e CSS e como adicionar imagens dentro do
