@@ -11,7 +11,7 @@ import PortraitIcon from "@mui/icons-material/Portrait";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function Professor() {
-  const isMobile = useIsMobile({ mobileSize: 1366 });
+  const isMobile = useIsMobile({ mobileSize: 1175 });
 
   return (
     <Box className={styles.container}>
@@ -25,9 +25,9 @@ export default function Professor() {
             </Box>
 
             <FadeInFromLeftWhenVisible>
-              <Box marginTop={70}>
+              <Box className={styles.heading}>
                 <Heading
-                  size={isMobile ? 36 : 44}
+                  size={isMobile ? 28 : 36}
                   color="white"
                   fontFamily="Cabin"
                   weight="semi-bold"
@@ -36,33 +36,26 @@ export default function Professor() {
                 </Heading>
               </Box>
 
-              <Heading className={styles.cardSubtitle} size={20}>
+              <Text className={styles.cardSubtitle} size={isMobile ? 16 : 18}>
                 Desenvolvedor front-end
-              </Heading>
+              </Text>
 
               <Box className={styles.textContainer}>
-                <p>
+                <Text size={isMobile ? 14 : 16} color="white">
                   Ao me ver rodeado de programadores, decidi entrar de cabeça no
-                  mundo da tecnologia. Com muito foco tive uma evolução
-                  extraordinária e hoje faço parte de uma escola para novos devs
-                  front-end, além de atuar diretamente em diversos projetos de
-                  grandes empresas brasileiras, inclusive empresas
-                  internacionais.
-                </p>
-
-                <p>
-                  Apaixonado por aplicações web responsivas e de alta qualidade.
-                </p>
-
-                <Box>
-                  <p>Sempre em busca de novas oportunidades de crescimento!</p>
-                </Box>
+                  mundo da tecnologia e com muito foco tive uma evolução
+                  extraordinária e atuo diretamente em diversos projetos de
+                  grandes empresas brasileiras. Minha carreira como
+                  desenvolvedor front-end é focada em React.JS e sou apaixonado
+                  por aplicações web responsivas e de alta qualidade estou
+                  sempre em busca de novas oportunidades de crescimento!
+                </Text>
               </Box>
 
               <Box className={styles.contact}>
                 <Box display="flex" alignItems="center" gap={10}>
                   <img alt="Localiação" src="/images/localizacao.png" />
-                  <Text size={isMobile ? 14 : 16} color="lightGray">
+                  <Text size={isMobile ? 12 : 14} color="lightGray">
                     Brasília, DF - Brasil
                   </Text>
                 </Box>
@@ -73,7 +66,7 @@ export default function Professor() {
                     alt="E-mail"
                     src="/images/email.png"
                   />
-                  <Text size={isMobile ? 14 : 16} color="lightGray">
+                  <Text size={isMobile ? 12 : 14} color="lightGray">
                     brnmilano.dev@gmail.com
                   </Text>
                 </Box>
@@ -84,7 +77,7 @@ export default function Professor() {
                     alt="Telefone"
                     src="/images/telefone.png"
                   />
-                  <Text size={isMobile ? 14 : 16} color="lightGray">
+                  <Text size={isMobile ? 12 : 14} color="lightGray">
                     (61) 9 8342-6022
                   </Text>
                 </Box>
@@ -128,7 +121,7 @@ export default function Professor() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <PortraitIcon style={{ color: "#4169E1", fontSize: 24 }} />
+                  <PortraitIcon style={{ color: "#4149E1", fontSize: 24 }} />
                 </a>
               </Box>
             </FadeInFromLeftWhenVisible>

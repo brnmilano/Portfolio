@@ -6,16 +6,18 @@
 
   .content {
     width: 100%;
+
     .card {
-      padding: 20px 25px;
+      padding: 17px 20px;
       border: 1px solid #707070;
       border-radius: 10px;
+      max-width: 600px;
       background-color: #0f0f0f;
 
       .button {
         color: #6a6a6a;
         font-family: "MontSerrat", sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
       }
 
@@ -25,7 +27,7 @@
 
       .lineShadow {
         border: 1px solid #4b4b4b;
-        margin-top: 15px;
+        margin-top: 10px;
         width: 100%;
       }
 
@@ -57,109 +59,106 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: 1440px) {
-    .content {
-      .lineShadow {
-        border: 1px solid #4b4b4b;
-        margin-top: 10px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1366px) {
+@media screen and (max-width: 1175px) {
+  .container {
     .content {
       .card {
-        padding: 10px 15px;
-
-        .button {
-          font-size: 10px;
-        }
-
-        .lineShadow {
-          border: 1px solid #4b4b4b;
-          margin-top: 10px;
-          width: 100%;
+        .projects {
+          height: 100px;
         }
       }
     }
   }
+}
 
-  @media screen and (max-width: 1260px) {
+@media screen and (max-width: 550px) {
+  .container {
     .content {
       .card {
-        padding: 15px 20px;
-
-        .button {
-          font-size: 14px;
-        }
-
         .lineShadow {
-          margin-top: 10px;
+          margin-top: 0;
         }
 
         .projects {
-          height: 138px;
+          height: 110px;
 
           .projectsImages {
-            height: 55px;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1030px) {
-    .content {
-      .card {
-        .lineShadow {
-          margin-top: 10px;
-        }
-
-        .projects {
-          height: 150px;
-
-          .projectsImages {
-            height: 54px;
-          }
-
-          .arrow {
-            margin-left: 5px;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 855px) {
-    .content {
-      .card {
-        padding: 15px 20px;
-
-        .mobile {
-          flex-direction: column;
-        }
-
-        .button {
-          font-size: 14px;
-        }
-
-        .lineShadow {
-          margin-top: 10px;
-        }
-
-        .projects {
-          margin-top: 20px;
-          height: 150px;
-
-          .projectsImages {
-            height: 50px;
+            height: 40px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
           }
 
           .arrow {
-            display: none;
+            margin-left: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .container {
+    .content {
+      .card {
+        .button {
+          font-size: 12px;
+        }
+
+        .mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .projects {
+          .projectsImages {
+            height: 35px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+
+          .arrow {
+            margin-left: 60px;
+
+            .button {
+              padding: 0;
+              min-width: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .container {
+    .content {
+      .card {
+        .projects {
+          .projectCard {
+            div {
+              font-size: 10px;
+              line-height: 15px;
+            }
+          }
+
+          .projectsImages {
+            height: 30px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+
+          .arrow {
+            margin-left: 0;
+
+            .button {
+              padding: 0;
+              min-width: 0;
+            }
           }
         }
       }

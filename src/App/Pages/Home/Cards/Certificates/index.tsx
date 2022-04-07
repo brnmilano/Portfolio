@@ -8,7 +8,7 @@ import Text from "Components/Text";
 import useIsMobile from "helpers/useIsMobile";
 
 export default function Certificados() {
-  const isMobile = useIsMobile({ mobileSize: 1440 });
+  const isMobile = useIsMobile({ mobileSize: 1175 });
 
   return (
     <Box className={styles.container}>
@@ -21,7 +21,7 @@ export default function Certificados() {
               justifyContent="between"
               alignItems="center"
             >
-              <Heading color="white" size={isMobile ? 28 : 36}>
+              <Heading color="white" size={isMobile ? 20 : 28}>
                 Certificados
               </Heading>
               <Button
@@ -44,10 +44,10 @@ export default function Certificados() {
                     alt="Alura"
                   />
                   <Box>
-                    <Text size={isMobile ? 14 : 16} color="white">
+                    <Text size={isMobile ? 12 : 14} color="white">
                       Formação Front-End
                     </Text>
-                    <Text size={isMobile ? 14 : 16} color="white">
+                    <Text size={isMobile ? 12 : 14} color="white">
                       Alura, 2021
                     </Text>
                   </Box>

@@ -12,16 +12,3 @@
     gap: 20px;
   }
 }
-
-@media screen and (max-width: 995px) {
-  .container {
-    padding: 25px;
-    h1 {
-      font-size: 28px;
-      line-height: 35px;
-    }
-    .certificados {
-      flex-direction: column;
-    }
-  }
-}

@@ -9,7 +9,7 @@ import Text from "Components/Text";
 import useIsMobile from "helpers/useIsMobile";
 
 export default function LastProjects() {
-  const isMobile = useIsMobile({ mobileSize: 1440 });
+  const isMobile = useIsMobile({ mobileSize: 1175 });
 
   return (
     <Box className={styles.container}>
@@ -22,7 +22,7 @@ export default function LastProjects() {
               justifyContent="between"
               alignItems="center"
             >
-              <Heading color="white" size={isMobile ? 28 : 36}>
+              <Heading color="white" size={isMobile ? 20 : 28}>
                 Últimos projetos
               </Heading>
               <Button
@@ -45,8 +45,7 @@ export default function LastProjects() {
                     alt="Mr. Green"
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
-                    Mr. Green, projeto feito em Next.JS, clique e fique por
-                    dentro de tudo!
+                    Mr. Green, projeto em Next.JS.
                   </Text>
 
                   <Box className={styles.arrow}>
@@ -67,8 +66,7 @@ export default function LastProjects() {
                     alt="Front Academy"
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
-                    Front Academy, projeto feito em Next.JS, clique e fique por
-                    dentro de tudo!
+                    Front Academy, projeto em Next.JS.
                   </Text>
 
                   <Box className={styles.arrow}>
@@ -89,7 +87,7 @@ export default function LastProjects() {
                     alt=""
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
-                    Freelance onde pude desenvolver o trabalho de um dev pleno!
+                    Freelance, site e-commerce.
                   </Text>
 
                   <Box className={styles.arrow}>
@@ -109,7 +107,7 @@ export default function LastProjects() {
                     alt="Cantinho do amor"
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
-                    Projeto criado para treinar a criação de componentes.
+                    Projeto para treinar a criação de componentes.
                   </Text>
 
                   <Box className={styles.arrow}>
@@ -130,7 +128,7 @@ export default function LastProjects() {
                     alt="Grade de depoimentos"
                   />
                   <Text size={isMobile ? 12 : 14} color="white">
-                    Projeto feito para treinar CSS Grid e responsividade.
+                    Projeto para treinar CSS Grid e responsividade.
                   </Text>
 
                   <Box className={styles.arrow}>

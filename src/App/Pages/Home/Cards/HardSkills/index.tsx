@@ -6,14 +6,14 @@ import styles from "./styles.module.scss";
 import useIsMobile from "helpers/useIsMobile";
 
 export default function HardSkills() {
-  const isMobile = useIsMobile({ mobileSize: 1440 });
+  const isMobile = useIsMobile({ mobileSize: 1175 });
 
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
         <FadeInWhenVisible>
           <Box className={styles.card}>
-            <Heading color="white" size={isMobile ? 28 : 36}>
+            <Heading color="white" size={isMobile ? 20 : 28}>
               Tecnologias e frameworks
             </Heading>
 
@@ -32,7 +32,7 @@ export default function HardSkills() {
                 <Box>
                   <img
                     className={styles.imageSkills}
-                    src="images/css.png"
+                    src="images/sass.png"
                     alt="CSS 3"
                   />
                 </Box>
@@ -42,14 +42,6 @@ export default function HardSkills() {
                     className={styles.imageSkills}
                     src="images/java-script.png"
                     alt="JavaScript"
-                  />
-                </Box>
-
-                <Box>
-                  <img
-                    className={styles.imageSkills}
-                    src="images/type-script.png"
-                    alt="TypeScript"
                   />
                 </Box>
 
@@ -74,14 +66,6 @@ export default function HardSkills() {
                     className={styles.imageSkills}
                     src="images/git.png"
                     alt="Git"
-                  />
-                </Box>
-
-                <Box>
-                  <img
-                    className={styles.imageSkills}
-                    src="images/design-responsivo.png"
-                    alt="Layouts Responsivos"
                   />
                 </Box>
               </Box>

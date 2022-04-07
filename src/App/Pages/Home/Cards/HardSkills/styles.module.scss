@@ -7,125 +7,82 @@
   .content {
     width: 100%;
     .card {
-      padding: 20px 25px;
+      padding: 17px 20px;
       border: 1px solid #707070;
       border-radius: 10px;
+      max-width: 600px;
       background-color: #0f0f0f;
     }
 
     .lineShadow {
       border: 1px solid #4b4b4b;
-      margin-top: 15px;
+      margin-top: 10px;
       width: 100%;
     }
 
     .skills {
       display: flex;
       gap: 15px;
-      margin-top: 25px;
+      margin-top: 15px;
 
       .imageSkills {
-        height: 50px;
+        height: 45px;
       }
     }
   }
+}
 
-  @media screen and (max-width: 1440px) {
-    .content {
-      .lineShadow {
-        margin-top: 10px;
-      }
-
-      .skills {
-        margin-top: 15px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1366px) {
-    .content {
-      width: 100%;
-      .card {
-        padding: 10px 15px;
-      }
-
-      .lineShadow {
-        margin-top: 10px;
-      }
-
-      .skills {
-        margin-top: 15px;
-
-        .imageSkills {
-          height: 40px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1260px) {
+@media screen and (max-width: 1175px) {
+  .container {
     .content {
       .card {
-        padding: 15px 20px;
-      }
-
-      .skills {
-        margin-top: 15px;
-
-        .imageSkills {
-          height: 40px;
+        .projects {
+          height: 100px;
         }
       }
     }
   }
+}
 
-  @media screen and (max-width: 1030px) {
+@media screen and (max-width: 550px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+
     .content {
       .card {
-        padding: 15px 20px;
-
-        h2 {
-          font-size: 25px;
+        .lineShadow {
+          margin-top: 5px;
         }
-      }
 
-      .lineShadow {
-        margin-top: 10px;
-      }
-
-      .skills {
-        margin-top: 15px;
-
-        .imageSkills {
-          height: 30px;
+        .skills {
+          .imageSkills {
+            height: 30px;
+          }
         }
       }
     }
   }
+}
 
-  @media screen and (max-width: 855px) {
+@media screen and (max-width: 425px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+
     .content {
       .card {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 15px 20px;
-
-        h2 {
-          font-size: 21px;
+        h3 {
+          text-align: center;
         }
-      }
 
-      .lineShadow {
-        margin-top: 10px;
-      }
+        .skills {
+          gap: 10px;
+          justify-content: center;
 
-      .skills {
-        gap: 10px;
-        margin-top: 20px;
-
-        .imageSkills {
-          height: 30px;
+          .imageSkills {
+            height: 30px;
+          }
         }
       }
     }

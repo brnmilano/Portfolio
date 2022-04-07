@@ -6,16 +6,18 @@
 
   .content {
     width: 100%;
+
     .card {
-      padding: 20px 25px;
+      padding: 17px 20px;
       border: 1px solid #707070;
       border-radius: 10px;
+      max-width: 600px;
       background-color: #0f0f0f;
 
       .button {
         color: #6a6a6a;
         font-family: "MontSerrat", sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
       }
 
@@ -25,7 +27,7 @@
 
       .lineShadow {
         border: 1px solid #4b4b4b;
-        margin-top: 15px;
+        margin-top: 10px;
         width: 100%;
       }
     }
@@ -42,112 +44,35 @@
         background-color: #1d1d1d;
         border-radius: 10px;
         gap: 10px;
-        max-width: 550px;
+        max-width: 450px;
       }
 
       .certificatesImages {
-        height: 75px;
+        height: 65px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
       }
     }
   }
+}
 
-  @media screen and (max-width: 1440px) {
+@media screen and (max-width: 425px) {
+  .container {
     .content {
       .card {
-        .lineShadow {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1366px) {
-    .content {
-      width: 100%;
-      .card {
-        padding: 10px 15px;
-
-        .button {
-          font-size: 10px;
-        }
-
-        .lineShadow {
-          margin-top: 10px;
-        }
-      }
-
-      .certificates {
-        margin-top: 15px;
-
-        .certificatesImages {
-          height: 55px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1260px) {
-    .content {
-      .card {
-        padding: 15px 20px;
-
-        .button {
-          font-size: 14px;
-        }
-
-        .lineShadow {
-          border: 1px solid #4b4b4b;
-          margin-top: 10px;
-        }
-      }
-      .certificates {
-        .certificatesCard {
-          max-width: 550px;
-        }
-
-        .certificatesImages {
-          height: 70px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 855px) {
-    .content {
-      .card {
-        padding: 15px 20px;
-
         .mobile {
+          display: flex;
           flex-direction: column;
-
-          .button {
-            font-size: 14px;
-          }
-
-          .lineShadow {
-            margin-top: 10px;
-          }
+          justify-content: center;
+          align-items: center;
         }
 
-        .certificates {
-          margin-top: 20px;
+        .button {
+          font-size: 12px;
+        }
 
-          .certificatesCard {
-            display: flex;
-            align-items: center;
-            background-color: #1d1d1d;
-            border-radius: 10px;
-            gap: 10px;
-            max-width: 550px;
-          }
-
-          .certificatesImages {
-            height: 75px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-          }
+        .lineShadow {
+          margin-top: 0;
         }
       }
     }

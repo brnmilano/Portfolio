@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 export default function Home() {
   return (
-    <Box className={styles.content}>
+    <Box className={styles.container}>
       <Apresentação />
       <Cards />
     </Box>
