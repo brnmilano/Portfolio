@@ -1,13 +1,3 @@
-import { Button } from "@/components/ui/Button";
-import {
-  ButtonSizes,
-  ButtonVariants,
-} from "@/components/ui/Button/button.type";
-import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
-import GitHubIcon from "@/components/icons/GitHubIcon";
-import MailIcon from "@/components/icons/MailIcon";
-import LinkedInIcon from "@/components/icons/LinkedinIcon";
-import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon";
 import styles from "./page.module.scss";
 import Intro from "./components/intro/intro";
 import Projects from "./components/projects/contact";

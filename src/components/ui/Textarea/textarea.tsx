@@ -1,15 +1,9 @@
 "use client";
 
-import { useId, useMemo, useRef, useCallback } from "react";
+import { useId, useMemo, useRef } from "react";
 import type { TextareaProps } from "./textarea.types";
 import { TextareaSizes } from "./textarea.types";
-import {
-  Bold,
-  Italic,
-  Underline,
-  Strikethrough,
-  MoreHorizontal,
-} from "lucide-react";
+
 import styles from "./textarea.module.scss";
 
 /**
@@ -31,7 +25,6 @@ import styles from "./textarea.module.scss";
  */
 export function Textarea({
   label,
-  showToolbar = false,
   size = TextareaSizes.MEDIUM,
   containerClassName,
   errors,
@@ -46,58 +39,6 @@ export function Textarea({
   const textareaId = useId();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fieldName = registerField || name || "";
-
-  const applyFormatting = useCallback((command: string, value?: string) => {
-    const textarea = textareaRef.current;
-    if (!textarea) return;
-
-    const start = textarea.selectionStart;
-    const end = textarea.selectionEnd;
-    const selectedText = textarea.value.substring(start, end);
-
-    if (selectedText || value) {
-      let formattedText = selectedText;
-      let prefix = "";
-      let suffix = "";
-
-      switch (command) {
-        case "bold":
-          prefix = "**";
-          suffix = "**";
-          break;
-        case "italic":
-          prefix = "*";
-          suffix = "*";
-          break;
-        case "underline":
-          prefix = "__";
-          suffix = "__";
-          break;
-        case "strikethrough":
-          prefix = "~~";
-          suffix = "~~";
-          break;
-      }
-
-      formattedText = `${prefix}${selectedText}${suffix}`;
-
-      const newValue =
-        textarea.value.substring(0, start) +
-        formattedText +
-        textarea.value.substring(end);
-
-      textarea.value = newValue;
-
-      // Move o cursor para o final do texto formatado
-      const newPosition = start + formattedText.length;
-      textarea.setSelectionRange(newPosition, newPosition);
-      textarea.focus();
-
-      // Dispara evento de change para integração com React Hook Form
-      const event = new Event("input", { bubbles: true });
-      textarea.dispatchEvent(event);
-    }
-  }, []);
 
   const containerClasses = useMemo(
     () =>
@@ -129,66 +70,6 @@ export function Textarea({
       )}
 
       <div className={styles.content}>
-        {showToolbar && (
-          <div
-            className={styles.toolbar}
-            role="toolbar"
-            aria-label="Ferramentas de formatação"
-          >
-            {/* Botões de formatação básica */}
-            <button
-              type="button"
-              className={styles.toolbarButton}
-              onClick={() => applyFormatting("bold")}
-              aria-label="Negrito"
-              title="Negrito"
-            >
-              <Bold size={16} />
-            </button>
-
-            <button
-              type="button"
-              className={styles.toolbarButton}
-              onClick={() => applyFormatting("italic")}
-              aria-label="Itálico"
-              title="Itálico"
-            >
-              <Italic size={16} />
-            </button>
-
-            <button
-              type="button"
-              className={styles.toolbarButton}
-              onClick={() => applyFormatting("underline")}
-              aria-label="Sublinhado"
-              title="Sublinhado"
-            >
-              <Underline size={16} />
-            </button>
-
-            <button
-              type="button"
-              className={styles.toolbarButton}
-              onClick={() => applyFormatting("strikethrough")}
-              aria-label="Tachado"
-              title="Tachado"
-            >
-              <Strikethrough size={16} />
-            </button>
-
-            <div className={styles.toolbarDivider} />
-
-            <button
-              type="button"
-              className={styles.toolbarButton}
-              aria-label="Mais opções"
-              title="Mais opções"
-            >
-              <MoreHorizontal size={16} />
-            </button>
-          </div>
-        )}
-
         <textarea
           ref={textareaRef}
           id={textareaId}

@@ -1,12 +1,10 @@
 "use client";
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import type { KeyboardEvent } from "react";
 import { InputProps } from "./input.types";
-import { useState, useCallback, useMemo, useId } from "react";
-import { Lock, LockKeyhole } from "lucide-react";
+import { useMemo, useId } from "react";
 import styles from "./input.module.scss";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const DisplayErrorMessage = (data: any) => {
   return <p>{data?.message || ""}</p>;
 };
@@ -39,32 +37,9 @@ export function Input({
   name,
   ...rest
 }: InputProps) {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
-
-  const isPasswordType = type === "password";
   const inputId = useId();
 
   const fieldName = registerField || name || "";
-
-  const inputType = isPasswordType
-    ? showPassword
-      ? "text"
-      : "password"
-    : type;
-
-  const togglePasswordVisibility = useCallback(() => {
-    setShowPassword((prev) => !prev);
-  }, []);
-
-  const handleKeyDown = useCallback(
-    (event: KeyboardEvent<HTMLSpanElement>) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        togglePasswordVisibility();
-      }
-    },
-    [togglePasswordVisibility],
-  );
 
   const containerClasses = useMemo(
     () => `${styles.container} ${containerClassName}`.trim(),
@@ -76,23 +51,6 @@ export function Input({
     [className, icon],
   );
 
-  const iconClasses = useMemo(() => `${styles.icon} ${styles.clickable}`, []);
-
-  const PadlockIcon = useMemo(
-    () => (showPassword ? <LockKeyhole size={20} /> : <Lock size={20} />),
-    [showPassword],
-  );
-
-  const accessibilityProps = useMemo(
-    () => ({
-      "aria-label": showPassword ? "Ocultar senha" : "Mostrar senha",
-      "aria-pressed": showPassword,
-      "aria-controls": inputId,
-      title: showPassword ? "Ocultar senha" : "Mostrar senha",
-    }),
-    [showPassword, inputId],
-  );
-
   return (
     <div className={containerClasses}>
       <label htmlFor={inputId} className={styles.label}>
@@ -100,30 +58,17 @@ export function Input({
       </label>
 
       <div className={styles.content}>
-        {icon && iconPosition === "right" && !isPasswordType && (
+        {icon && iconPosition === "right" && (
           <span className={styles.icon}>{icon}</span>
         )}
 
         <input
           id={inputId}
           className={inputClasses}
-          type={inputType}
+          type={type}
           name={name}
           {...rest}
         />
-
-        {isPasswordType && (
-          <span
-            className={iconClasses}
-            onClick={togglePasswordVisibility}
-            role="button"
-            tabIndex={0}
-            onKeyDown={handleKeyDown}
-            {...accessibilityProps}
-          >
-            {PadlockIcon}
-          </span>
-        )}
       </div>
 
       <div
