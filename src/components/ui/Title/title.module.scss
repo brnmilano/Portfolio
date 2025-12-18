@@ -1,0 +1,23 @@
+.title-small {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.title-medium {
+  /* Ajuste responsivo: cresce com a largura da viewport */
+  font-size: clamp(1rem, 2.5vw + 1rem, 1.5rem); /* entre ~16px e 24px */
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.title-large {
+  font-size: clamp(1.5rem, 4vw + 2rem, 3.5rem); /* entre ~24px e 56px */
+  font-weight: bold;
+  line-height: 120%;
+}
+
+/* Utilitário para forçar herança de cor quando necessário */
+.title-inherit {
+  color: inherit;
+}
