@@ -18,6 +18,8 @@ import JestIcon from "@/components/icons/JestIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
 import JavaScriptIcon from "@/components/icons/JavaScriptIcon";
 import GitHubIcon from "@/components/icons/GitHubIcon";
+import Image from "next/image";
+import MyImage from "../../../../public/brn.png";
 
 export default function Intro() {
   const tags = [
@@ -34,7 +36,19 @@ export default function Intro() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div>
+        <div className={styles.avatarWrapper}>
+          <figure>
+            <Image
+              src={MyImage}
+              alt="Foto de perfil"
+              fill
+              className={styles.avatar}
+              priority
+            />
+          </figure>
+        </div>
+
+        <div className={styles.texts}>
           <Text
             text={`${INTRO_GREETING} ${INTRO_NAME} ${INTRO_PROFESSION_PREFIX}`}
             size={TextSizes.LARGE}
@@ -46,9 +60,7 @@ export default function Intro() {
             size={TitleSizes.LARGE}
             color="var(--white)"
           />
-        </div>
 
-        <div>
           <Text
             text="Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos."
             size={TextSizes.SMALL}
