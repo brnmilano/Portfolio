@@ -1,8 +1,6 @@
 import styles from "./page.module.scss";
 import Intro from "./components/intro/intro";
 import Projects from "./components/projects/contact";
-import Services from "./components/services/contact";
-import Contact from "./components/contact/contact";
 
 export default function Home() {
   return (
@@ -25,9 +23,9 @@ export default function Home() {
 
       <Projects />
 
-      <Services />
+      {/* <Services />
 
-      <Contact />
+      <Contact /> */}
     </section>
   );
 }
