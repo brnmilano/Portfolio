@@ -1,0 +1,22 @@
+echo "🔄 Executando post-merge..."
+
+# Verifica se houve mudanças no package.json ou pnpm-lock.yaml
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+  echo "$changed_files" | grep -q "$1" && echo "✓ $1 foi modificado"
+}
+
+# Reinstala dependências se package.json ou lock file foram alterados
+if check_run "package.json" || check_run "pnpm-lock.yaml"; then
+  echo "📦 Instalando dependências atualizadas..."
+  pnpm install
+fi
+
+# Limpa cache do Next.js se arquivos de configuração foram alterados
+if check_run "next.config.ts" || check_run "tsconfig.json"; then
+  echo "🧹 Limpando cache do Next.js..."
+  rm -rf .next
+fi
+
+echo "✅ Post-merge concluído!"

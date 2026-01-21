@@ -1,0 +1,12 @@
+export { ArrowUpRightIcon } from "./ArrowUpRightIcon";
+export { HtmlIcon } from "./HtmlIcon";
+export { ReactIcon } from "./ReactIcon";
+export { NextJsIcon } from "./NextJsIcon";
+export { TailwindCSSIcon } from "./TailwindCSSIcon";
+export { JestIcon } from "./JestIcon";
+export { TypeScriptIcon } from "./TypeScriptIcon";
+export { JavaScriptIcon } from "./JavaScriptIcon";
+export { GitHubIcon } from "./GitHubIcon";
+export { MailIcon } from "./MailIcon";
+export { InstagramIcon } from "./InstagramIcon";
+export { LinkedInIcon } from "./LinkedinIcon";

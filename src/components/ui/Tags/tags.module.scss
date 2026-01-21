@@ -1,0 +1,27 @@
+.container {
+  gap: clamp(0.5rem, 0.8vw, 1rem);
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 0.8vw, 1rem);
+  padding: clamp(0.5rem, 0.5vw, 0.1rem);
+  border-radius: 2rem;
+  background-color: var(--gray-400);
+  width: 100%;
+  font-size: clamp(0.75rem, 0.9vw, 1rem);
+}
+
+.icon {
+  width: clamp(1rem, 1.6vw, 2rem);
+  height: clamp(1rem, 1.6vw, 2rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: var(--gray-200);
+}
