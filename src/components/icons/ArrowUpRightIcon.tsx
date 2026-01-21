@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function ArrowUpRightIcon(props: IconProps) {
+export function ArrowUpRightIcon(props: IconProps) {
   const {
     color = "var(--blue)",
     size,

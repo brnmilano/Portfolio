@@ -1,25 +1,28 @@
-import styles from "./intro.module.scss";
-import { TitleSizes } from "@/components/ui/Title/title.type";
-import { TextSizes } from "@/components/ui/Text/text.type";
+import Image from "next/image";
+import { TitleSizes } from "@/components/ui/Title/title.types";
+import { TextSizes } from "@/components/ui/Text/text.types";
+import MyImage from "../../../../public/brn.png";
+import { Text } from "@/components/ui/Text";
+import { Tags } from "@/components/ui/Tags";
+import { Title } from "@/components/ui/Title";
 import {
+  GitHubIcon,
+  HtmlIcon,
+  JavaScriptIcon,
+  JestIcon,
+  NextJsIcon,
+  ReactIcon,
+  TailwindCSSIcon,
+  TypeScriptIcon,
+} from "@/components/icons";
+import {
+  INTRO_DESCRIPTION,
   INTRO_GREETING,
   INTRO_NAME,
   INTRO_PROFESSION,
   INTRO_PROFESSION_PREFIX,
 } from "./constants";
-import HtmlIcon from "@/components/icons/HtmlIcon";
-import ReactIcon from "@/components/icons/ReactIcon";
-import NextJsIcon from "@/components/icons/NextJsIcon";
-import TailwindCSSIcon from "@/components/icons/TailwindCSSIcon";
-import JestIcon from "@/components/icons/JestIcon";
-import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
-import JavaScriptIcon from "@/components/icons/JavaScriptIcon";
-import GitHubIcon from "@/components/icons/GitHubIcon";
-import Image from "next/image";
-import MyImage from "../../../../public/brn.png";
-import { Text } from "@/components/ui/Text";
-import { Tags } from "@/components/ui/Tags";
-import { Title } from "@/components/ui/Title";
+import styles from "./intro.module.scss";
 
 export default function Intro() {
   const tags = [
@@ -62,7 +65,7 @@ export default function Intro() {
           />
 
           <Text
-            text="Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos."
+            text={INTRO_DESCRIPTION}
             size={TextSizes.SMALL}
             color="var(--gray-300)"
           />

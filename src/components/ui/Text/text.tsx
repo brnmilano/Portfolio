@@ -1,4 +1,4 @@
-import type { TextProps } from "./text.type";
+import type { TextProps } from "./text.types";
 import style from "./text.module.scss";
 
 export function Text(props: TextProps) {

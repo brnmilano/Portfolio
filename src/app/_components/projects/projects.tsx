@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/Card";
 import styles from "./projects.module.scss";
 import { Title } from "@/components/ui/Title";
-import { TitleSizes } from "@/components/ui/Title/title.type";
+import { TitleSizes } from "@/components/ui/Title/title.types";
 import { Text, TextSizes } from "@/components/ui/Text";
 
 export default function Projects() {

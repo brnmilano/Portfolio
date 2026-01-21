@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function NextJsIcon(props: IconProps) {
+export function NextJsIcon(props: IconProps) {
   const { size } = props;
 
   const pathData =

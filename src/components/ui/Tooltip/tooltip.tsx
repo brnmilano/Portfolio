@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import styles from "./tooltip.module.scss";
-import { TooltipPositions, type TooltipProps } from "./tooltip.type";
+import { TooltipPositions, type TooltipProps } from "./tooltip.types";
 
 export function Tooltip({
   content,

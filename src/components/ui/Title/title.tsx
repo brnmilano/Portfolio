@@ -1,4 +1,4 @@
-import { TitleProps } from "./title.type";
+import { TitleProps } from "./title.types";
 import style from "./title.module.scss";
 
 export function Title(props: TitleProps) {

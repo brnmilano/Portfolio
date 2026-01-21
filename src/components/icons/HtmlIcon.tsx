@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function HtmlIcon(props: IconProps) {
+export function HtmlIcon(props: IconProps) {
   const { size } = props;
 
   const shieldPath = "M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0z";

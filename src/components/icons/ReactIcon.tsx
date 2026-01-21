@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function ReactIcon(props: IconProps) {
+export function ReactIcon(props: IconProps) {
   const { size, color = "#61DAFB" } = props;
 
   return (

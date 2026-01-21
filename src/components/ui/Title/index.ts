@@ -1,3 +1,3 @@
 export { Title } from "./title";
-export { TitleSizes } from "./title.type";
-export type { TitleProps } from "./title.type";
+export { TitleSizes } from "./title.types";
+export type { TitleProps } from "./title.types";

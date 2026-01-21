@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function JavaScriptIcon(props: IconProps) {
+export function JavaScriptIcon(props: IconProps) {
   const { size, color = "#F7DF1E" } = props;
 
   const pathData =

@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function TypeScriptIcon(props: IconProps) {
+export function TypeScriptIcon(props: IconProps) {
   const { color = "var(--gray-200)", size, letterStrokeWidth = 0.1 } = props;
 
   const tsPath =

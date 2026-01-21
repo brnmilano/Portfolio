@@ -1,5 +1,5 @@
 import styles from "./tags.module.scss";
-import { TagsProps } from "./tags.type";
+import { TagsProps } from "./tags.types";
 
 export function Tags(props: TagsProps) {
   const { tags, className } = props;

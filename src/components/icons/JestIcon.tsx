@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function JestIcon(props: IconProps) {
+export function JestIcon(props: IconProps) {
   const { size } = props;
 
   const pathData =

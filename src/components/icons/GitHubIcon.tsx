@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function GitHubIcon(props: IconProps) {
+export function GitHubIcon(props: IconProps) {
   const { color = "var(--gray-200)", size, letterStrokeWidth = 0.6 } = props;
 
   const iconPath =

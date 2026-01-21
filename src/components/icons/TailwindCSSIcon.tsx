@@ -1,6 +1,6 @@
-import type { IconProps } from "@/type/icons";
+import type { IconProps } from "@/types/icons";
 
-export default function TailwindCSSIcon(props: IconProps) {
+export function TailwindCSSIcon(props: IconProps) {
   const { size, color = "#ffffff" } = props;
 
   return (
