@@ -1,7 +1,7 @@
 import type { TextProps } from "./text.type";
 import style from "./text.module.scss";
 
-export default function Text(props: TextProps) {
+export function Text(props: TextProps) {
   const { text, size, color } = props;
 
   // fallback seguro: garante uma classe válida e cor padrão

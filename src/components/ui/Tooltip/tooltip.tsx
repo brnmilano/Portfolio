@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./tooltip.module.scss";
 import { TooltipPositions, type TooltipProps } from "./tooltip.type";
 
-export default function Tooltip({
+export function Tooltip({
   content,
   children,
   position = TooltipPositions.TOP,

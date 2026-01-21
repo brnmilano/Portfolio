@@ -1,7 +1,7 @@
 import { TitleProps } from "./title.type";
 import style from "./title.module.scss";
 
-export default function Title(props: TitleProps) {
+export function Title(props: TitleProps) {
   const { text, size, color } = props;
 
   // fallback seguro: garante uma classe válida e cor padrão

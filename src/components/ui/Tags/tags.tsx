@@ -1,7 +1,7 @@
 import styles from "./tags.module.scss";
 import { TagsProps } from "./tags.type";
 
-export default function Tags(props: TagsProps) {
+export function Tags(props: TagsProps) {
   const { tags, className } = props;
 
   const containerClass = className ?? styles.container;

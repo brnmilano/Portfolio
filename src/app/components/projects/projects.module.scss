@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}

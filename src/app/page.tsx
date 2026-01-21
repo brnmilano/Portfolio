@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
 import Intro from "./components/intro/intro";
-import Projects from "./components/projects/contact";
+import Projects from "./components/projects/projects";
 
 export default function Home() {
   return (

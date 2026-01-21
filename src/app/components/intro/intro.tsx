@@ -1,7 +1,5 @@
-import Title from "@/components/ui/Title/title";
 import styles from "./intro.module.scss";
 import { TitleSizes } from "@/components/ui/Title/title.type";
-import Text from "@/components/ui/Text/text";
 import { TextSizes } from "@/components/ui/Text/text.type";
 import {
   INTRO_GREETING,
@@ -9,7 +7,6 @@ import {
   INTRO_PROFESSION,
   INTRO_PROFESSION_PREFIX,
 } from "./constants";
-import Tags from "@/components/ui/Tags/tags";
 import HtmlIcon from "@/components/icons/HtmlIcon";
 import ReactIcon from "@/components/icons/ReactIcon";
 import NextJsIcon from "@/components/icons/NextJsIcon";
@@ -20,6 +17,9 @@ import JavaScriptIcon from "@/components/icons/JavaScriptIcon";
 import GitHubIcon from "@/components/icons/GitHubIcon";
 import Image from "next/image";
 import MyImage from "../../../../public/brn.png";
+import { Text } from "@/components/ui/Text";
+import { Tags } from "@/components/ui/Tags";
+import { Title } from "@/components/ui/Title";
 
 export default function Intro() {
   const tags = [
