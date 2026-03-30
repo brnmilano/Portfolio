@@ -1,4 +1,4 @@
-@import "../../../styles/breakpoints";
+@use "../../../styles/breakpoints" as *;
 
 .container {
   position: relative;
@@ -36,6 +36,10 @@
       height: clamp(9rem, 18vw, 12rem);
       border-radius: 50%;
       box-shadow: 0 0 0 0.4rem var(--red);
+
+      .imageWrapper {
+        position: relative;
+      }
 
       .avatar {
         position: absolute;

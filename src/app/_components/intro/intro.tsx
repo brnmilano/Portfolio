@@ -39,17 +39,16 @@ export default function Intro() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.avatarWrapper}>
-          <figure>
-            <Image
-              src={MyImage}
-              alt="Foto de perfil"
-              fill
-              className={styles.avatar}
-              priority
-            />
-          </figure>
-        </div>
+        <figure className={styles.avatarWrapper}>
+          <Image
+            src={MyImage}
+            alt="Foto de perfil"
+            fill
+            className={styles.avatar}
+            priority
+            sizes="(max-width: 768px) 100vw, 384px"
+          />
+        </figure>
 
         <div className={styles.texts}>
           <Text
