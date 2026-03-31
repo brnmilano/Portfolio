@@ -10,3 +10,6 @@ export { GitHubIcon } from "./GitHubIcon";
 export { MailIcon } from "./MailIcon";
 export { InstagramIcon } from "./InstagramIcon";
 export { LinkedInIcon } from "./LinkedinIcon";
+export { SoftwareDevelopmentIcon } from "./SoftwareDevelopmentIcon";
+export { ApplicationsReactNextIcon } from "./ApplicationsReactNextIcon";
+export { ApiIntegrationIcon } from "./ApiIntegrationIcon";
