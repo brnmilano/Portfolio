@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 0.8vw, 1rem);
+
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.5rem, 0.8vw, 0.75rem);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-400);
+    font-size: clamp(0.75rem, 0.9vw, 1rem);
+    white-space: nowrap;
+
+    .icon {
+      width: clamp(1rem, 1.6vw, 1.5rem);
+      height: clamp(1rem, 1.6vw, 1.5rem);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text {
+      color: var(--gray-200);
+    }
+  }
+}

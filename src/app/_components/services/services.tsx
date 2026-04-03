@@ -5,7 +5,7 @@ import { Text, TextSizes } from "@/components/ui/Text";
 import { ServiceCard } from "./ServiceCard";
 import { SERVICES_DATA, SERVICES_TITLE, SERVICES_SUBTITLE } from "./constants";
 
-export function Services() {
+export default function Services() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>

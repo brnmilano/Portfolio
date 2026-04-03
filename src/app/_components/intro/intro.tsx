@@ -3,7 +3,7 @@ import { TitleSizes } from "@/components/ui/Title/title.types";
 import { TextSizes } from "@/components/ui/Text/text.types";
 import MyImage from "../../../../public/brn.png";
 import { Text } from "@/components/ui/Text";
-import { Tags } from "@/components/ui/Tags";
+import { TechBadges } from "@/components/ui/TechBadges";
 import { Title } from "@/components/ui/Title";
 import {
   GitHubIcon,
@@ -25,7 +25,7 @@ import {
 import styles from "./intro.module.scss";
 
 export default function Intro() {
-  const tags = [
+  const badges = [
     { text: "HTML", icon: <HtmlIcon /> },
     { text: "Tailwind CSS", icon: <TailwindCSSIcon /> },
     { text: "React.JS", icon: <ReactIcon /> },
@@ -70,7 +70,7 @@ export default function Intro() {
           />
         </div>
 
-        <Tags tags={tags} className={styles.tags} />
+        <TechBadges badges={badges} className={styles.tags} />
       </div>
     </section>
   );

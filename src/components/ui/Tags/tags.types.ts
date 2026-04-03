@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
 
-export type Tags = {
+export type Tag = {
   text: string;
-  icon?: ReactNode;
+  href: string;
+  leftIcon: ReactNode;
+  rightIcon: ReactNode;
 };
 
 export interface TagsProps {
-  tags: Tags[];
-  /** Classe opcional para customizar o container externo (ex.: grid do pai) */
-  className?: string;
+  tags: Tag[];
 }
