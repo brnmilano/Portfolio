@@ -5,6 +5,10 @@ import type { TextareaProps } from "./textarea.types";
 import { TextareaSizes } from "./textarea.types";
 
 import styles from "./textarea.module.scss";
+import {
+  buildContainerClasses,
+  buildInputClasses,
+} from "@/utils/classNameBuilder";
 
 /**
  * @description Componente de Textarea com suporte a barra de ferramentas de formatação.
@@ -42,12 +46,20 @@ export function Textarea({
 
   const containerClasses = useMemo(
     () =>
-      `${styles.container} ${styles[size]} ${containerClassName || ""}`.trim(),
+      buildContainerClasses({
+        base: styles.container,
+        variant: styles[size],
+        custom: containerClassName,
+      }),
     [containerClassName, size],
   );
 
   const textareaClasses = useMemo(
-    () => `${styles.textarea} ${className || ""}`.trim(),
+    () =>
+      buildInputClasses({
+        baseStyle: styles.textarea,
+        custom: className,
+      }),
     [className],
   );
 

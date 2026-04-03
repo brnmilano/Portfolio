@@ -3,10 +3,17 @@
 import { InputProps } from "./input.types";
 import { useMemo, useId } from "react";
 import styles from "./input.module.scss";
+import {
+  buildContainerClasses,
+  buildInputClasses,
+} from "@/utils/classNameBuilder";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const DisplayErrorMessage = (data: any) => {
-  return <p>{data?.message || ""}</p>;
+interface ErrorData {
+  message?: string;
+}
+
+export const DisplayErrorMessage = (data: ErrorData | undefined) => {
+  return <p>{data?.message ?? "Campo inválido"}</p>;
 };
 
 /**
@@ -42,12 +49,21 @@ export function Input({
   const fieldName = registerField || name || "";
 
   const containerClasses = useMemo(
-    () => `${styles.container} ${containerClassName}`.trim(),
+    () =>
+      buildContainerClasses({
+        base: styles.container,
+        custom: containerClassName,
+      }),
     [containerClassName],
   );
 
   const inputClasses = useMemo(
-    () => `${styles.input} ${icon ? styles.withIcon : ""} ${className}`.trim(),
+    () =>
+      buildInputClasses({
+        baseStyle: styles.input,
+        conditionalStyle: icon ? styles.withIcon : undefined,
+        custom: className,
+      }),
     [className, icon],
   );
 

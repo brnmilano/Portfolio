@@ -19,11 +19,6 @@ export enum TextSizes {
   LARGE = "large",
 }
 
-export enum TextVariants {
-  PRIMARY = "primary",
-  SECONDARY = "secondary",
-}
-
 /**
  * Props para o componente Text
  * Define as propriedades do texto

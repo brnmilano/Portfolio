@@ -2,6 +2,7 @@
 
 import { ButtonSizes, ButtonVariants, type ButtonProps } from "./button.types";
 import styles from "./button.module.scss";
+import { buildButtonClasses } from "@/utils/classNameBuilder";
 
 export function Button(props: ButtonProps) {
   const {
@@ -16,12 +17,15 @@ export function Button(props: ButtonProps) {
     ...rest
   } = props;
 
+  const buttonClasses = buildButtonClasses({
+    baseStyle: social ? styles.button : styles.social,
+    variant: styles[buttonVariant],
+    size: styles[`size-${size}`],
+  });
+
   return (
     <button
-      className={`
-        ${social ? styles.button : styles.social} 
-        ${styles[buttonVariant]} 
-        ${styles[`size-${size}`]}`}
+      className={buttonClasses}
       aria-label={ariaLabel}
       disabled={disabled}
       {...rest}

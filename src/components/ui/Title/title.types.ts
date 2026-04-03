@@ -19,11 +19,6 @@ export enum TitleSizes {
   LARGE = "large",
 }
 
-export enum TitleVariants {
-  PRIMARY = "primary",
-  SECONDARY = "secondary",
-}
-
 /**
  * Props para o componente Title
  * Define as propriedades do título
