@@ -24,7 +24,6 @@ const eslintConfig = [
         },
       },
     },
-    extends: ["eslint:recommended"],
   },
   {
     files: ["**/*.ts", "**/*.tsx"],

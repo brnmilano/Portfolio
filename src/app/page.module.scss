@@ -1,8 +1,44 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: var(--gray-500);
   color: var(--white);
 
-  display: flex;
-  flex-direction: column;
+  // Mobile: 320px
+  @include media-mobile {
+    gap: 0;
+  }
+
+  // Small: 375px
+  @include media-xs {
+    gap: 0;
+  }
+
+  // Tablet: 768px
+  @include media-md {
+    gap: 2rem;
+  }
+
+  // Desktop: 1024px
+  @include media-lg {
+    gap: 3rem;
+  }
+
+  // Large Desktop: 1366px
+  @include media-xl {
+    gap: 3rem;
+  }
+
+  // 2K Desktop: 1920px
+  @include media-2xl {
+    gap: 3rem;
+  }
+
+  // Max Desktop: 1980px
+  @include media-max {
+    gap: 4rem;
+  }
 }

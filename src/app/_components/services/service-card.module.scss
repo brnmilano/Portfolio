@@ -1,19 +1,98 @@
+@use "../../../styles/breakpoints" as *;
+
 // ===== WRAPPER DO ÍCONE =====
 .iconWrapper {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80px;
   border-radius: 0.5rem;
 
   @media (prefers-reduced-motion: no-preference) {
     transition: background 250ms ease-out;
   }
 
+  // Mobile: 320px
+  @include media-mobile {
+    height: 60px;
+  }
+
+  // XS: 375px
+  @include media-xs {
+    height: 65px;
+  }
+
+  // Small: 425px
+  @include media-sm {
+    height: 70px;
+  }
+
+  // Tablet: 768px
+  @include media-md {
+    height: 75px;
+  }
+
+  // Desktop: 1024px
+  @include media-lg {
+    height: 80px;
+  }
+
+  // Large Desktop: 1366px
+  @include media-xl {
+    height: 85px;
+  }
+
+  // 2K Desktop: 1920px
+  @include media-2xl {
+    height: 90px;
+  }
+
+  // Max Desktop: 1980px
+  @include media-max {
+    height: 95px;
+  }
+
   svg {
-    width: 3rem;
-    height: 3rem;
     color: var(--yellow);
     flex-shrink: 0;
+
+    @include media-mobile {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+
+    @include media-xs {
+      width: 2.35rem;
+      height: 2.35rem;
+    }
+
+    @include media-sm {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @include media-md {
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+
+    @include media-lg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include media-xl {
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+
+    @include media-2xl {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    @include media-max {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
   }
 }

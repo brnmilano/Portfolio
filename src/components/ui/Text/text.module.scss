@@ -1,38 +1,119 @@
 @use "../../../styles/breakpoints" as *;
 
-/* 14px */
+/* 14px - Small text */
 .text-small {
-  font-size: 0.875rem;
   font-weight: 400;
   line-height: 140%;
+
+  @include media-mobile {
+    font-size: clamp(0.75rem, 1vw, 0.8rem);
+  }
+
+  @include media-xs {
+    font-size: clamp(0.8rem, 1.05vw, 0.85rem);
+  }
+
+  @include media-sm {
+    font-size: clamp(0.825rem, 1.1vw, 0.875rem);
+  }
+
+  @include media-md {
+    font-size: 0.875rem;
+  }
+
+  @include media-lg {
+    font-size: 0.9rem;
+  }
+
+  @include media-xl {
+    font-size: 0.95rem;
+  }
+
+  @include media-2xl {
+    font-size: 1rem;
+  }
+
+  @include media-max {
+    font-size: 1.05rem;
+  }
 }
 
-/* 16px */
+/* 16px - Medium text */
 .text-medium {
-  font-size: clamp(0.95rem, 0.9vw + 0.9rem, 1.25rem); /* ~15px - 20px */
   font-weight: 700;
   line-height: 140%;
+
+  @include media-mobile {
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  }
+
+  @include media-xs {
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
+  }
+
+  @include media-sm {
+    font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+  }
+
+  @include media-md {
+    font-size: clamp(0.95rem, 0.9vw + 0.9rem, 1.25rem); /* ~15px - 20px */
+  }
+
+  @include media-lg {
+    font-size: clamp(1rem, 0.95vw + 0.95rem, 1.3rem);
+  }
+
+  @include media-xl {
+    font-size: clamp(1.1rem, 1vw + 1rem, 1.4rem);
+  }
+
+  @include media-2xl {
+    font-size: clamp(1.2rem, 1.05vw + 1.1rem, 1.5rem);
+  }
+
+  @include media-max {
+    font-size: clamp(1.25rem, 1.1vw + 1.15rem, 1.6rem);
+  }
 }
 
-/* 20px */
+/* 20px - Large text */
 .text-large {
-  font-size: clamp(0.875rem, 1.1vw + 0.875rem, 1.375rem); /* ~14px - 22px */
   line-height: 120%;
+
+  @include media-mobile {
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  }
+
+  @include media-xs {
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+  }
+
+  @include media-sm {
+    font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  }
+
+  @include media-md {
+    font-size: clamp(0.875rem, 1.1vw + 0.875rem, 1.375rem); /* ~14px - 22px */
+  }
+
+  @include media-lg {
+    font-size: clamp(1rem, 1.2vw + 0.95rem, 1.5rem);
+  }
+
+  @include media-xl {
+    font-size: clamp(1.15rem, 1.3vw + 1.05rem, 1.65rem);
+  }
+
+  @include media-2xl {
+    font-size: clamp(1.3rem, 1.4vw + 1.15rem, 1.8rem);
+  }
+
+  @include media-max {
+    font-size: clamp(1.4rem, 1.5vw + 1.2rem, 2rem);
+  }
 }
 
 /* Utilitário para forçar herança de cor quando necessário */
 .text-inherit {
   color: inherit;
-}
-
-@include media-xs {
-}
-
-@include media-sm {
-}
-
-@include media-md {
-}
-
-@include media-lg {
 }

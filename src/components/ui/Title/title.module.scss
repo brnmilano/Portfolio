@@ -1,21 +1,117 @@
+@use "../../../styles/breakpoints" as *;
+
 .title-small {
   font-size: 1rem; /* 16px */
   font-weight: 600;
   line-height: 1.2;
+
+  @include media-mobile {
+    font-size: 0.95rem;
+  }
+
+  @include media-xs {
+    font-size: 0.975rem;
+  }
+
+  @include media-sm {
+    font-size: 1rem;
+  }
+
+  @include media-md {
+    font-size: 1.05rem;
+  }
+
+  @include media-lg {
+    font-size: 1.1rem;
+  }
+
+  @include media-xl {
+    font-size: 1.15rem;
+  }
+
+  @include media-2xl {
+    font-size: 1.2rem;
+  }
+
+  @include media-max {
+    font-size: 1.25rem;
+  }
 }
 
 .title-medium {
-  /* Ajuste responsivo: cresce com a largura da viewport */
-  font-size: clamp(1rem, 1.2vw + 1rem, 2rem); /* fluid entre ~16px e 32px */
+  /* Fluid typography com clamp e media queries para melhor controle */
   font-weight: 700;
   line-height: 1.05;
+
+  @include media-mobile {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  @include media-xs {
+    font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  }
+
+  @include media-sm {
+    font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+  }
+
+  @include media-md {
+    font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+  }
+
+  @include media-lg {
+    font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  }
+
+  @include media-xl {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  @include media-2xl {
+    font-size: clamp(1.75rem, 3.2vw, 2.2rem);
+  }
+
+  @include media-max {
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+  }
 }
 
 .title-large {
-  /* Mais fluidez em telas grandes (até 1980px) */
-  font-size: clamp(1.375rem, 2.4vw + 1.375rem, 3.125rem); /* fluid de ~28px até ~88px */
+  /* Fluid typography expandido com clamp e media queries */
   font-weight: bold;
   line-height: 120%;
+
+  @include media-mobile {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  }
+
+  @include media-xs {
+    font-size: clamp(1.625rem, 4.3vw, 2.1rem);
+  }
+
+  @include media-sm {
+    font-size: clamp(1.75rem, 4.6vw, 2.25rem);
+  }
+
+  @include media-md {
+    font-size: clamp(1.875rem, 4.9vw, 2.4rem);
+  }
+
+  @include media-lg {
+    font-size: clamp(2rem, 5.2vw, 2.6rem);
+  }
+
+  @include media-xl {
+    font-size: clamp(2.25rem, 5.5vw, 2.85rem);
+  }
+
+  @include media-2xl {
+    font-size: clamp(2.5rem, 5.8vw, 3.1rem);
+  }
+
+  @include media-max {
+    font-size: clamp(2.75rem, 6vw, 3.125rem);
+  }
 }
 
 /* Utilitário para forçar herança de cor quando necessário */

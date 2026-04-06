@@ -26,11 +26,12 @@ export function ProjectCard({
         }}
       >
         <Image
-          fill
           src={imageUrl}
           alt={title}
-          sizes="(max-width: 768px) 100vw, 384px"
+          fill
           style={{ objectFit: "cover" }}
+          priority
+          sizes="(max-width: 768px) 100vw, 384px"
         />
       </figure>
     </Card>
