@@ -46,7 +46,7 @@
 
   // 2K Desktop: 1920px
   @include media-2xl {
-    padding: 6rem 15rem;
+    padding: 6rem 20rem;
     margin-top: 6rem;
   }
 
@@ -147,13 +147,13 @@
 
   // 2K Desktop: 1920px
   @include media-2xl {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
   // Max Desktop: 1980px
   @include media-max {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
 }

@@ -240,13 +240,13 @@
       }
 
       @include media-2xl {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
         width: 100%;
       }
 
       @include media-max {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.75rem;
         width: 100%;
       }
