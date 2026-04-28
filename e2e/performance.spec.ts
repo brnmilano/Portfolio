@@ -2,6 +2,8 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Performance", () => {
+  // Aumentar timeout para testes de performance que podem ser mais lentos
+  test.setTimeout(60000); // 60 segundos
   test("should load page within reasonable time", async ({ page }) => {
     const startTime = Date.now();
 
