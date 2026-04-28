@@ -7,12 +7,12 @@ import { TechBadges } from "@/components/ui/TechBadges";
 import { Title } from "@/components/ui/Title";
 import {
   GitHubIcon,
-  HtmlIcon,
   JavaScriptIcon,
   JestIcon,
   NextJsIcon,
   ReactIcon,
-  TailwindCSSIcon,
+  MySQLIcon,
+  NodeIcon,
   TypeScriptIcon,
 } from "@/components/icons";
 import {
@@ -26,8 +26,8 @@ import styles from "./intro.module.scss";
 
 export default function Intro() {
   const badges = [
-    { text: "HTML", icon: <HtmlIcon /> },
-    { text: "Tailwind CSS", icon: <TailwindCSSIcon /> },
+    { text: "MySQL", icon: <MySQLIcon /> },
+    { text: "Node.JS", icon: <NodeIcon /> },
     { text: "React.JS", icon: <ReactIcon /> },
     { text: "Next.JS", icon: <NextJsIcon /> },
     { text: "Jest/RTL", icon: <JestIcon /> },

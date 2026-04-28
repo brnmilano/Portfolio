@@ -13,3 +13,5 @@ export { LinkedInIcon } from "./LinkedinIcon";
 export { SoftwareDevelopmentIcon } from "./SoftwareDevelopmentIcon";
 export { ApplicationsReactNextIcon } from "./ApplicationsReactNextIcon";
 export { ApiIntegrationIcon } from "./ApiIntegrationIcon";
+export { MySQLIcon } from "./MySQLIcon";
+export { NodeIcon } from "./NodeIcon";
